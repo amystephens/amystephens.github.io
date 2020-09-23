@@ -1,14 +1,18 @@
 body {
   margin: auto;
   max-width: 800px;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 header {
   background-color:#ECD078;
   color:#542437;
   text-align: center;
-  border-radius: 10px;  
+  border-radius: 10px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+ul {
+font-family: 'Oswald', sans-serif;
 }
 
 img {
@@ -31,7 +35,8 @@ h2 {
 main {
   color: #45676a;
   font-size: 20px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
+  font-family: 'Fjalla One', sans-serif; 
 }
 
 main a {
@@ -51,6 +56,7 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
   line-height: 1.25;
+  font-family: 'Oswald', sans-serif;
 }
 
 footer a {
