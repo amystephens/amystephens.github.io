@@ -94,13 +94,20 @@ h1 {
 }
 
 h2 {
-	font-size: 1.25rem;
-	letter-spacing: .15rem;
-	line-height: 1.5;
-	color: #990000;
+	font-size: 1rem;
+	letter-spacing: .025rem;
+	line-height: 0;
+	color: #542437;
 }
 
 h3 {
+	font-size: 1.25rem;
+	letter-spacing: .15rem;
+	line-height: 1.0;
+	color: #990000;
+}
+
+h4 {
 	font-size: 1rem;
 	letter-spacing: .025rem;
 	line-height: 0;
