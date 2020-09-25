@@ -2,11 +2,11 @@
 
 body {
 	font-size: 16px;
-	font-family: 'Fjalla One', sans-serif;	
+	font-family: 'Fjalla One', sans-serif;
 }
 
 header {
-	background-color:#ECD078;
+	background-color: #ECD078;
 	color: #542437;
 	text-align: center;
 	padding-top: 15px;
@@ -17,10 +17,10 @@ header {
 }
 
 footer {
-	background-color:#ECD078;
+	background-color: #ECD078;
 	color: #542437;
 	text-align: center;
-	
+
 	padding-top: 15px;
 	padding-bottom: 15px;
 	line-height: 1.5;
@@ -33,6 +33,7 @@ p {
 	color: #542437;
 	line-height: 1.5;
 }
+
 /* phone or baseline views **************************/
 main {
 	max-width: 967px;
@@ -44,11 +45,11 @@ main {
 
 main a {
 	color: #542437;
-  }
+}
 
 main a:hover {
 	color: #9459a3;
-  }
+}
 
 main section h2 {
 	color: #c11e24;
@@ -86,6 +87,7 @@ main section picture img {
 	max-width: 275px;
 	height: auto;
 }
+
 h1 {
 	font-size: 2.5rem;
 	letter-spacing: .45rem;
@@ -106,6 +108,5 @@ h3 {
 
 .colimage {
 	box-shadow: 0 0 30px #333;
-	border-radius: 10px;	
+	border-radius: 10px;
 }
-
