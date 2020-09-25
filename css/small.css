@@ -1,3 +1,4 @@
+/* small css for assignment portal main index file */
 body {
   margin: auto;
   max-width: 800px;
@@ -18,12 +19,14 @@ header img {
   width: 175px;
   height: auto;
   border-radius: 20px;
-  padding: 10px;  
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 h1 {
   padding: 10px;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
+  line-height: 2;  
 }
 
 h2 {

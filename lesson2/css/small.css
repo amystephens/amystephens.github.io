@@ -1,0 +1,111 @@
+/* small css for Week 2 Design Principles file */
+
+body {
+	font-size: 16px;
+	font-family: 'Fjalla One', sans-serif;	
+}
+
+header {
+	background-color:#ECD078;
+	color: #542437;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	line-height: .75;
+	margin: .5rem;
+	border-radius: 5px;
+}
+
+footer {
+	background-color:#ECD078;
+	color: #542437;
+	text-align: center;
+	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 1.5;
+	margin: .5rem;
+	border-radius: 5px;
+}
+
+p {
+	font-family: 'Oswald', sans-serif;
+	color: #542437;
+	line-height: 1.5;
+}
+/* phone or baseline views **************************/
+main {
+	max-width: 967px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+main a {
+	color: #542437;
+  }
+
+main a:hover {
+	color: #9459a3;
+  }
+
+main section h2 {
+	color: #c11e24;
+}
+
+main section h3 {
+	color: #542437;
+}
+
+main section {
+	margin: 0.5rem;
+	/* border: 1px solid #bbb; */
+	padding: 0 1rem;
+	background-color: #eeeeee;
+	border-radius: 5px;
+}
+
+main section:nth-child(1) {
+	display: block;
+	margin: 0.5rem;
+}
+
+main section:nth-child(2) {
+	display: block;
+	margin: 0.5rem;
+}
+
+main section:nth-child(3) {
+	display: block;
+	margin: 0.5rem;
+}
+
+main section picture img {
+	/* width: 100%; */
+	max-width: 275px;
+	height: auto;
+}
+h1 {
+	font-size: 2.5rem;
+	letter-spacing: .45rem;
+	line-height: 1.25;
+}
+
+h2 {
+	font-size: 1.25rem;
+	letter-spacing: .15rem;
+	line-height: 1.5;
+}
+
+h3 {
+	font-size: 1rem;
+	letter-spacing: .025rem;
+	line-height: 0;
+}
+
+.colimage {
+	box-shadow: 0 0 30px #333;
+	border-radius: 10px;	
+}
+

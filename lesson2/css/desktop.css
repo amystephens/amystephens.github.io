@@ -1,0 +1,17 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main section picture img {
+		/* border: 10px solid rgb(161, 26, 26); */
+	}
+
+    header, footer {
+        padding-top: 15px;
+        padding-bottom: 15px;        
+        line-height: .75;
+        /* margin: 5.5rem; */
+        border-radius: 5px;
+}
