@@ -7,7 +7,6 @@ body {
 
 header {
 	background-color: #ECD078;
-	color: #542437;
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 30px;
@@ -20,7 +19,6 @@ footer {
 	background-color: #ECD078;
 	color: #542437;
 	text-align: center;
-
 	padding-top: 15px;
 	padding-bottom: 15px;
 	line-height: 1.5;
@@ -43,21 +41,21 @@ main {
 	font-size: 0.8rem;
 }
 
-main a {
+a {
 	color: #542437;
 }
 
-main a:hover {
+a:hover {
 	color: #9459a3;
 }
 
-main section h2 {
-	color: #c11e24;
+/* main section h2 {
+	color: #ffffff;
 }
 
 main section h3 {
 	color: #542437;
-}
+} */
 
 main section {
 	margin: 0.5rem;
@@ -89,21 +87,24 @@ main section picture img {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 	letter-spacing: .45rem;
 	line-height: 1.25;
+	color: #542437;
 }
 
 h2 {
 	font-size: 1.25rem;
 	letter-spacing: .15rem;
 	line-height: 1.5;
+	color: #990000;
 }
 
 h3 {
 	font-size: 1rem;
 	letter-spacing: .025rem;
 	line-height: 0;
+	color: #542437;
 }
 
 .colimage {
