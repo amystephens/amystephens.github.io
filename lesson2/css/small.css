@@ -103,8 +103,8 @@ h1 {
   font-size: 5rem;
   letter-spacing: .7rem;
   line-height: 1.25;
-  margin-block-start: .45em;
-  margin-block-end: .25em;
+  margin-block-start: 30px;
+  margin-block-end: 22px;
   color: #ffffff;
 }
 
@@ -113,8 +113,7 @@ h2 {
   letter-spacing: .025rem;
   line-height: 0;
   color: #542437;
-  margin-block-start: 0em;
-  margin-block-end: 2em;
+  margin-block-end: 28px;
 }
 
 h3 {
@@ -129,7 +128,7 @@ h4 {
   letter-spacing: .025rem;
   line-height: 0;
   color: #542437;
-  margin-block-end: -.5em;
+  margin-block-end: -8px;
 }
 
 .colimage {
