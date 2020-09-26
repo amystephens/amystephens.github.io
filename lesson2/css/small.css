@@ -1,52 +1,53 @@
 /* small css for Week 2 Design Principles file */
 
 body {
-	font-size: 16px;
-	font-family: 'Fjalla One', sans-serif;
+  font-size: 16px;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 header {
-	background-color: #ECD078;
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 30px;
-	line-height: .75;
-	margin: .5rem;
-	border-radius: 5px;
+  background-color: #ECD078;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  line-height: .75;
+  margin: .5rem;
+  border-radius: 5px;
 }
 
 footer {
-	background-color: #ECD078;
-	color: #542437;
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	line-height: 1.5;
-	margin: .5rem;
-	border-radius: 5px;
+  background-color: #ECD078;
+  color: #542437;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  margin: .5rem;
+  border-radius: 5px;
 }
 
 p {
-	font-family: 'Oswald', sans-serif;
-	color: #542437;
-	line-height: 1.5;
+  font-family: 'Oswald', sans-serif;
+  color: #542437;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* phone or baseline views **************************/
 main {
-	max-width: 967px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+  max-width: 967px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 a {
-	color: #542437;
+  color: #542437;
+
 }
 
 a:hover {
-	color: #9459a3;
+  color: #9459a3;
 }
 
 /* main section h2 {
@@ -58,63 +59,81 @@ main section h3 {
 } */
 
 main section {
-	margin: 0.5rem;
-	/* border: 1px solid #bbb; */
-	padding: 0 1rem;
-	background-color: #eeeeee;
-	border-radius: 5px;
+  margin: 0.5rem;
+  /* border: 1px solid #bbb; */
+  padding: 0 1rem;
+  background-color: #eeeeee;
+  border-radius: 5px;
 }
 
 main section:nth-child(1) {
-	display: block;
-	margin: 0.5rem;
+  display: block;
+  margin: 0.5rem;
+  margin-right: 1.2rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-bottom: 1rem;
 }
 
 main section:nth-child(2) {
-	display: block;
-	margin: 0.5rem;
+  display: block;
+  margin: 0.5rem;
+  margin-right: 1.2rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-bottom: 1rem;
 }
 
 main section:nth-child(3) {
-	display: block;
-	margin: 0.5rem;
+  display: block;
+  margin: 0.5rem;
+  margin-right: 1.2rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-bottom: 1rem;
 }
 
 main section picture img {
-	/* width: 100%; */
-	max-width: 275px;
-	height: auto;
+  /* width: 100%; */
+  max-width: 275px;
+  height: auto;
 }
 
 h1 {
-	font-size: 2.25rem;
-	letter-spacing: .45rem;
-	line-height: 1.25;
-	color: #542437;
+  font-size: 5rem;
+  letter-spacing: .7rem;
+  line-height: 1.25;
+  margin-block-start: .45em;
+  margin-block-end: .25em;
+  color: #ffffff;
 }
 
 h2 {
-	font-size: 1rem;
-	letter-spacing: .025rem;
-	line-height: 0;
-	color: #542437;
+  font-size: 1rem;
+  letter-spacing: .025rem;
+  line-height: 0;
+  color: #542437;
+  margin-block-start: 0em;
+  margin-block-end: 2em;
 }
 
 h3 {
-	font-size: 1.25rem;
-	letter-spacing: .15rem;
-	line-height: 1.0;
-	color: #990000;
+  font-size: 2em;
+  letter-spacing: .3rem;
+  line-height: 1.0;
+  color: #990000;
 }
 
 h4 {
-	font-size: 1rem;
-	letter-spacing: .025rem;
-	line-height: 0;
-	color: #542437;
+  font-size: 1rem;
+  letter-spacing: .025rem;
+  line-height: 0;
+  color: #542437;
+  margin-block-end: -.5em;
 }
 
 .colimage {
-	box-shadow: 0 0 30px #333;
-	border-radius: 10px;
+  box-shadow: 0 0 30px #333;
+  border-radius: 10px;
+  margin-top: .8em;
 }
