@@ -1,0 +1,183 @@
+/* small css for Week 2 Design Principles file */
+
+body {
+  font-size: 16px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+header {
+  background-color: #ECD078;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  line-height: .75;
+  margin: .5rem;
+  border-radius: 5px;
+}
+
+/* figure out how to get rid of the underline
+  nav ul a {
+  text decoration: none;
+} */
+
+nav ul{
+  list-style-type: none;
+  background-color: #000000;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-align: center;
+}
+
+nav ul li a{
+  letter-spacing: .25rem;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 2rem;  
+}
+
+nav ul li a:hover{
+  color: #ECD078;
+}
+
+.active {
+  background-color: #ECD078;
+  text-decoration: none;
+  color: #000000;
+  padding-top: 1rem;
+  padding-bottom: .9rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+
+footer {
+  background-color: #ECD078;
+  color: #542437;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  margin: .5rem;
+  border-radius: 5px;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  color: #542437;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* phone or baseline views **************************/
+main {
+  max-width: 967px;
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  
+}
+
+a {
+  color: #542437;
+
+}
+
+a:hover {
+  color: #9459a3;
+}
+
+/* main section h2 {
+	color: #ffffff;
+}
+
+main section h3 {
+	color: #542437;
+} */
+
+main section {
+  margin: 0.5rem;
+  /* border: 1px solid #bbb; */
+  padding: 0 1rem;
+  /* background-color: #eeeeee;
+  border-radius: 5px; */
+  font-family: 'Oswald';
+}
+
+main section:nth-child(1) {
+  display: block;
+  margin: 0.5rem;
+  margin-right: 1.2rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-bottom: .1rem;
+}
+
+main section:nth-child(2) {
+  display: block;
+  margin: 0.5rem;
+  margin-right: 1.2rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+main section:nth-child(3) {
+  display: block;
+  margin: 0.5rem;
+  margin-right: 1.2rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+main section picture img {
+  /* width: 100%; */
+  max-width: 275px;
+  height: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: .7rem;
+  line-height: 1.25;
+  margin-block-start: 30px;
+  margin-block-end: 22px;
+  color: #542437;
+}
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  line-height: 0;
+  color: #542437;
+  margin-block-end: 28px;
+}
+
+h3 {
+  font-size: 2em;
+  letter-spacing: .3rem;
+  line-height: 3.0;
+  color: #990000;
+}
+
+h4 {
+  /* font-size: 1rem;
+  letter-spacing: .025rem;
+  line-height: 0;
+  color: #542437;
+  margin-block-end: -8px; *old css from index document*/
+  font-size: 2em;
+  letter-spacing: .3rem;
+  line-height: 1.0;
+  color: #990000;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+.logo {
+  max-width: 150px;
+}

@@ -1,0 +1,37 @@
+/* medium css for Week 2 Design Principles file */
+/* Tablet Views ******************************/
+@media only screen and (min-width: 44em) {
+  /* Flex Design for Navigation */
+  
+  nav ul { 
+    display: flex;
+    text-align: center;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+  }
+    
+  nav ul li { 
+    flex: 1 1 100%;
+  }
+
+  main {
+    /* grid-template-columns: 1fr 1fr; */
+    max-width: 646px;
+  }
+
+  main section picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+   font-size: 5rem; 
+  }
+
+  h3 {
+    font-size: 4em;
+    letter-spacing: .3rem;
+    line-height: .01rem;
+    color: #990000;
+  }
+}
