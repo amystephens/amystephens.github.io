@@ -2,7 +2,13 @@
 @media only screen and (min-width: 72em) {
   main {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* grouping them together makes the responsivness work */
+  header, nav, main, footer {
     max-width: 1200px;
+    /* display: grid;
+    grid-template-columns: 1fr; */
   }
 
   header,

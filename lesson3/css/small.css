@@ -1,4 +1,4 @@
-/* small css for Week 2 Design Principles file */
+/* small css for Week 3 Web Planning file */
 
 body {
   font-size: 16px;
@@ -34,7 +34,8 @@ nav ul li a{
   letter-spacing: .25rem;
   text-decoration: none;
   color: #ffffff;
-  line-height: 2rem;  
+  line-height: 2rem;
+  display: block; /* this makes the whole block clickable */ 
 }
 
 nav ul li a:hover{
@@ -71,7 +72,8 @@ p {
 }
 
 /* phone or baseline views **************************/
-main {
+/* grouping them together makes the responsivness work */
+header, nav, main, footer {
   max-width: 967px;
   margin: 0 auto;
   /* display: grid;
