@@ -169,7 +169,7 @@ h5 {
 }
 
 .paragraphtext {
-  font-size: 16;
+  font-size: 16px;
   font-family: 'Oswald';
   color: #333333;
 }
@@ -208,6 +208,4 @@ h5 {
 
 .siteplanparagraphs {
   max-width: 600px;
-}
-
 }
