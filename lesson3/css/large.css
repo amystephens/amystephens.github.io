@@ -5,7 +5,10 @@
   }
 
   /* grouping them together makes the responsivness work */
-  header, nav, main, footer {
+  header,
+  nav,
+  main,
+  footer {
     max-width: 1200px;
     /* display: grid;
     grid-template-columns: 1fr; */
@@ -19,4 +22,5 @@
     /* margin: 5.5rem; */
     border-radius: 5px;
   }
+
 }

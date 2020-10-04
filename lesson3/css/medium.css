@@ -2,20 +2,21 @@
 /* Tablet Views ******************************/
 @media only screen and (min-width: 44em) {
   /* Flex Design for Navigation */
-  
-  nav ul { 
+
+  nav ul {
     display: flex;
     text-align: center;
     padding-left: .5rem;
-    padding-bottom: 1rem; 
+    padding-bottom: 1rem;
     /* padding: 0;
     margin: 0;
     list-style-type: none;
     overflow: hidden; *** these are the settings Bro Blazzard had in the virtual lab */
   }
-    
-  nav ul li { 
-    flex: 1 1 100%; /* 1 1 100px (use 100% the space avaiable and keep them all the same) */
+
+  nav ul li {
+    flex: 1 1 100%;
+    /* 1 1 100px (use 100% the space avaiable and keep them all the same) */
   }
 
   /* main {
@@ -24,9 +25,13 @@
   } */
 
   /* grouping them together makes the responsivness work */
-  header, nav, main, footer {
+  header,
+  nav,
+  main,
+  footer {
     max-width: 800px;
-    margin: 0 auto; /* the 0 is for the top and bottom and the auto is for left and right. It goes top, right, bottom, left when you enter values in, but if you only do two it is top/bottom and then left/right */
+    margin: 0 auto;
+    /* the 0 is for the top and bottom and the auto is for left and right. It goes top, right, bottom, left when you enter values in, but if you only do two it is top/bottom and then left/right */
     /* display: grid;
     grid-template-columns: 1fr; */
   }
@@ -37,13 +42,13 @@
   }
 
   h1 {
-   font-size: 5rem; 
+    font-size: 5rem;
   }
 
   h3 {
     font-size: 4em;
     letter-spacing: .3rem;
     line-height: .01rem;
-    color: #990000;
   }
+
 }

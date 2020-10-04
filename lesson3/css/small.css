@@ -32,13 +32,15 @@ nav ul {
 
 nav ul li a {
   letter-spacing: .25rem;
-  text-decoration: none; /* gets rid of underline */
+  text-decoration: none;
+  /* gets rid of underline */
   color: #ffffff;
   line-height: 2rem;
-  display: block; /* this makes the whole block clickable */ 
+  display: block;
+  /* this makes the whole block clickable */
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: #ECD078;
 }
 
@@ -63,7 +65,8 @@ footer {
   border-radius: 5px;
 }
 
-p, li {
+p,
+li {
   font-family: 'Oswald', sans-serif;
   color: #000000;
   font-size: 16px;
@@ -72,7 +75,10 @@ p, li {
 
 /* phone or baseline views **************************/
 /* grouping them together makes the responsivness work */
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
   max-width: 967px;
   margin: 0 auto;
   /* display: grid;
@@ -132,7 +138,7 @@ h3 {
   font-size: 2rem;
   letter-spacing: .3rem;
   line-height: .01rem;
-  color: #990000;
+  color: #000000;
 }
 
 h4 {
@@ -145,6 +151,7 @@ h4 {
   letter-spacing: .03rem;
   line-height: 1.0;
   color: #990000;
+  margin-block-end: -8px;
 }
 
 h5 {
@@ -153,6 +160,12 @@ h5 {
 
 .logo {
   max-width: 125px;
+  padding-top: 25px;
+}
+
+.photo {
+  max-width: 125px;
+  margin-block-start: -25px;
 }
 
 .paragraphtext {
@@ -191,4 +204,10 @@ h5 {
   font-family: 'Fjalla One';
   color: #003366;
   letter-spacing: .125rem;
+}
+
+.siteplanparagraphs {
+  max-width: 600px;
+}
+
 }
