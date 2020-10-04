@@ -7,7 +7,7 @@
     display: flex;
     text-align: center;
     padding-left: .5rem;
-    padding-bottom: .5rem; 
+    padding-bottom: 1rem; 
     /* padding: 0;
     margin: 0;
     list-style-type: none;
@@ -15,7 +15,7 @@
   }
     
   nav ul li { 
-    flex: 1 1 100%;
+    flex: 1 1 100%; /* 1 1 100px (use 100% the space avaiable and keep them all the same) */
   }
 
   /* main {

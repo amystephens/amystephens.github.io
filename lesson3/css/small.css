@@ -20,7 +20,7 @@ header {
   text decoration: none;
 } */
 
-nav ul{
+nav ul {
   list-style-type: none;
   background-color: #000000;
   padding-top: 1rem;
@@ -30,9 +30,9 @@ nav ul{
   text-align: left;
 }
 
-nav ul li a{
+nav ul li a {
   letter-spacing: .25rem;
-  text-decoration: none;
+  text-decoration: none; /* gets rid of underline */
   color: #ffffff;
   line-height: 2rem;
   display: block; /* this makes the whole block clickable */ 
@@ -52,7 +52,6 @@ nav ul li a:hover{
   padding-right: 4rem;
 } */
 
-
 footer {
   background-color: #ECD078;
   color: #542437;
@@ -64,9 +63,9 @@ footer {
   border-radius: 5px;
 }
 
-p {
+p, li {
   font-family: 'Oswald', sans-serif;
-  color: #542437;
+  color: #000000;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -104,33 +103,6 @@ main section {
   /* background-color: #eeeeee;
   border-radius: 5px; */
   font-family: 'Oswald';
-}
-
-main section:nth-child(1) {
-  display: block;
-  margin: 0.5rem;
-  margin-right: 1.2rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  padding-bottom: .1rem;
-}
-
-main section:nth-child(2) {
-  display: block;
-  margin: 0.5rem;
-  margin-right: 1.2rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  padding-bottom: 1rem;
-}
-
-main section:nth-child(3) {
-  display: block;
-  margin: 0.5rem;
-  margin-right: 1.2rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  padding-bottom: 1rem;
 }
 
 main section picture img {
@@ -181,4 +153,42 @@ h5 {
 
 .logo {
   max-width: 125px;
+}
+
+.paragraphtext {
+  font-size: 16;
+  font-family: 'Oswald';
+  color: #333333;
+}
+
+.heading1 {
+  font-size: 3rem;
+  font-family: 'Fjalla One';
+  color: #669966;
+  letter-spacing: .25rem;
+}
+
+.heading2 {
+  font-size: 2rem;
+  font-family: 'Fjalla One';
+  color: #003366;
+}
+
+.heading3 {
+  font-size: 1.5rem;
+  font-family: 'Fjalla One';
+  color: #003366;
+}
+
+.heading4 {
+  font-size: 1.25rem;
+  font-family: 'Fjalla One';
+  color: #003366;
+}
+
+.fontnavigation {
+  font-size: 1rem;
+  font-family: 'Fjalla One';
+  color: #003366;
+  letter-spacing: .125rem;
 }
