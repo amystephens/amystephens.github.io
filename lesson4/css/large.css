@@ -1,0 +1,42 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 72em) {
+
+  nav ul {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+    /* 1 1 100px (use 100% the space avaiable and keep them all the same) */
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  header img {
+    width: 150px;
+    padding-top: 8px;
+  }
+
+  .headings h1 {
+    font-size: 4rem;
+    letter-spacing: .3rem;
+    line-height: 4.5rem;
+  }
+
+  .motto {
+    font-size: 2rem;
+    margin-left: 19px;
+  }
+
+}

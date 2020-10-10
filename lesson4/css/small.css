@@ -1,0 +1,212 @@
+/* small css for Lesson 4 Preston Town Page */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* phone or baseline views **************************/
+/* grouping them together makes the responsivness work */
+main,
+footer {
+  max-width: 967px;
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+}
+
+/* grouping them together makes the responsivness work */
+header,
+nav {
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+p,
+li {
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+nav button {
+  margin: .2rem 2% .5rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+nav {
+  background-color: #aa0000;
+  font-family: Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  text-align: center;
+}
+
+nav ul li a {
+  font-family: 'fjalla one';
+  font-size: 1rem;
+  letter-spacing: .25rem;
+  text-decoration: none;
+  /* gets rid of underline */
+  color: #ffffff;
+  line-height: 2rem;
+  display: block;
+  /* this makes the whole block clickable */
+  /*padding: .8rem 2%; * Bro Blaz had this */
+
+}
+
+nav ul li a:hover {
+  background-color: #ECD078;
+}
+
+#onthispage {
+  background-color: #ECD078;
+  color: #990000;
+}
+
+
+nav ul.hide {
+  display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  background-color: #99cccc;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+  font-size: 1.6rem;
+  /* font-size: 22px; */
+  margin: 0 0 0 17px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  line-height: 1.35;
+  color: #003366;
+}
+
+/* h1 {
+  text-align: center;
+  margin-block-start: 30px;
+  margin-block-end: 22px;
+ } */
+
+
+.motto {
+  letter-spacing: .02rem;
+  color: #000000;
+  margin-left: 17px;
+  font-size: .9rem;
+  /* font-size: 16px; */
+}
+
+/* #logo {
+  width: 50%;
+  max-width: 125px;
+  min-width: 50px;
+  float: left;
+  margin:  0px 15px 50px 15px;
+}
+
+ #idahoName {
+  font-size: 38px;
+  width: 550px;
+  padding: 20px 150px;
+  letter-spacing: .3rem;
+} */
+
+
+/* .active {
+  background-color: #ECD078;
+  text-decoration: none;
+  color: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: .9rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+} */
+
+h2 {
+  font-family: 'fjalla one', sans-serif;
+  font-size: 2rem;
+  letter-spacing: .05rem;
+  line-height: 0;
+  color: #003366;
+  padding-left: .6rem;
+  text-align: center;
+}
+
+.placeholder {
+  display: block;
+  margin: 10px;
+  border: 0px;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #669966;
+  text-align: center;
+}
+
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  margin: .5rem;
+  max-width: 1150px;
+}
+
+footer a:link,
+footer a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffcc66;
+}

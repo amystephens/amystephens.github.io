@@ -1,0 +1,21 @@
+/* medium css for Lesson 4 Preston Town Page */
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 35rem) {
+  /* Flex Design for Navigation */
+
+  header img {
+    width: 110px;
+    padding-top: 8px;
+  }
+
+  .headings h1 {
+    font-size: 3rem;
+  }
+
+  .motto {
+    font-size: 1.5rem;
+    margin-left: 19px;
+  }
+
+}
