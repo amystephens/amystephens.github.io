@@ -135,6 +135,8 @@ h2 {
   letter-spacing: .05rem;
   line-height: 0;
   color: #003366;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: .6rem;
   text-align: center;
 }
