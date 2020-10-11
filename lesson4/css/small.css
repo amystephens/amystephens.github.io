@@ -19,16 +19,12 @@ main,
 footer {
   max-width: 967px;
   margin: 0 auto;
- /* display: grid;
-  grid-template-columns: 1fr; */
 }
 
 /* grouping them together makes the responsivness work */
 header,
 nav {
   margin: 0 auto;
-  /* display: grid;
-  grid-template-columns: 1fr; */
 }
 
 body {
@@ -76,15 +72,13 @@ nav ul li a {
   line-height: 2rem;
   display: block;
   /* this makes the whole block clickable */
-  /*padding: .8rem 2%; * Bro Blaz had this */
-
 }
 
 nav ul li a:hover {
   background-color: #ECD078;
 }
 
-#onthispage {
+.onthispage {
   background-color: #ECD078;
   color: #990000;
 }
@@ -128,46 +122,12 @@ header img {
   color: #003366;
 }
 
-/* h1 {
-  text-align: center;
-  margin-block-start: 30px;
-  margin-block-end: 22px;
- } */
-
-
 .motto {
   letter-spacing: .02rem;
   color: #000000;
   margin-left: 17px;
   font-size: .9rem;
-  /* font-size: 16px; */
 }
-
-/* #logo {
-  width: 50%;
-  max-width: 125px;
-  min-width: 50px;
-  float: left;
-  margin:  0px 15px 50px 15px;
-}
-
- #idahoName {
-  font-size: 38px;
-  width: 550px;
-  padding: 20px 150px;
-  letter-spacing: .3rem;
-} */
-
-
-/* .active {
-  background-color: #ECD078;
-  text-decoration: none;
-  color: #ffffff;
-  padding-top: 1rem;
-  padding-bottom: .9rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-} */
 
 h2 {
   font-family: 'fjalla one', sans-serif;
@@ -192,6 +152,7 @@ h2 {
 footer {
   background-color: #003366;
   color: #ffffff;
+  font-size: .7rem;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;

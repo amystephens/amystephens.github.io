@@ -3,10 +3,6 @@
 
   nav ul {
     display: flex;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
     overflow: hidden;
   }
 
@@ -36,7 +32,6 @@
 
   .motto {
     font-size: 2rem;
-    margin-left: 19px;
   }
 
 }
