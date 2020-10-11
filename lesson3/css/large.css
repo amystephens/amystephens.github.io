@@ -1,26 +1,13 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 72em) {
-  main {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+ 
 
   /* grouping them together makes the responsivness work */
-  header,
-  nav,
   main,
   footer {
     max-width: 1200px;
     /* display: grid;
     grid-template-columns: 1fr; */
-  }
-
-  header,
-  footer {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    line-height: .75;
-    /* margin: 5.5rem; */
-    border-radius: 5px;
   }
 
 }

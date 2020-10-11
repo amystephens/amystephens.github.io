@@ -5,35 +5,43 @@ body {
   font-family: 'Fjalla One', sans-serif;
 }
 
-header {
-  background-color: #ECD078;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  line-height: .75;
-  margin: .5rem;
-  border-radius: 5px;
+/* phone or baseline views **************************/
+/* grouping them together makes the responsivness work */
+header,
+nav {
+  margin: 0 auto;
 }
 
-/* figure out how to get rid of the underline
-  nav ul a {
-  text decoration: none;
-} */
+header {
+  background-color: #ECD078;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.headings h1 {
+  margin: 20px 100px 0px 100px;
+}
 
 nav ul {
+  display: flex;
+  text-align: center;
+  padding: 5px 2px 5px 22px;
+  flex-direction: column;
   list-style-type: none;
   background-color: #000000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2.5rem;
-  padding-right: .5rem;
-  text-align: left;
+  }
+
+nav ul li {
+  flex: 1 1 100%;
+  /* 1 1 100px (use 100% the space avaiable and keep them all the same) */
 }
 
 nav ul li a {
   letter-spacing: .25rem;
   text-decoration: none;
-  /* gets rid of underline */
   color: #ffffff;
   line-height: 2rem;
   display: block;
@@ -44,63 +52,15 @@ nav ul li a:hover {
   color: #ECD078;
 }
 
-/* .active {
-  background-color: #ECD078;
-  text-decoration: none;
-  color: #ffffff;
-  padding-top: 1rem;
-  padding-bottom: .9rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-} */
-
-footer {
-  background-color: #ECD078;
-  color: #542437;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  line-height: 1.5;
-  margin: .5rem;
-  border-radius: 5px;
-}
-
-p,
-li {
-  font-family: 'Oswald', sans-serif;
-  color: #000000;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 /* phone or baseline views **************************/
 /* grouping them together makes the responsivness work */
-header,
-nav,
 main,
 footer {
-  max-width: 967px;
+  max-width: 500px;
   margin: 0 auto;
   /* display: grid;
   grid-template-columns: 1fr; */
 }
-
-a {
-  color: #542437;
-
-}
-
-a:hover {
-  color: #9459a3;
-}
-
-/* main section h2 {
-	color: #ffffff;
-}
-
-main section h3 {
-	color: #542437;
-} */
 
 main section {
   margin: 0.5rem;
@@ -113,16 +73,39 @@ main section {
 
 main section picture img {
   /* width: 100%; */
-  max-width: 275px;
+  max-width: 100%;
   height: auto;
+}
+
+footer {
+  background-color: #ECD078;
+  color: #542437;
+  text-align: center;
+  padding: 15px 15px;
+  line-height: 1.5;
+  border-radius: 5px;
+}
+
+p,
+li {
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: #542437;
+}
+
+a:hover {
+  color: #9459a3;
 }
 
 h1 {
   font-size: 3rem;
   letter-spacing: .7rem;
   line-height: 1.25;
-  margin-block-start: 30px;
-  margin-block-end: 22px;
   color: #542437;
 }
 
@@ -131,7 +114,6 @@ h2 {
   letter-spacing: .1rem;
   line-height: 0;
   color: #542437;
-  margin-block-end: 28px;
 }
 
 h3 {
@@ -142,11 +124,6 @@ h3 {
 }
 
 h4 {
-  /* font-size: 1rem;
-  letter-spacing: .025rem;
-  line-height: 0;
-  color: #542437;
-  margin-block-end: -8px; *old css from index document*/
   font-size: 2em;
   letter-spacing: .03rem;
   line-height: 1.0;
