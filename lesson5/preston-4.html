@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--This is my Lesson 4 Preston Town Page-->
+
+<head>
+  <meta charset="utf-8">
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preston Town Page</title>
+  <meta name="description"
+    content="Week 04 - Weather Site Preston Town Page for Amy Stephens' WDD 230 Frontend Dev class at BYU-Idaho - IdahoWeatherNow.com.">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+<!-- HEADER HERE -->
+  <header>
+    <picture>
+      <img id="logo" src="images/logos.png" alt="Idaho Weather Now logo.">
+    </picture>
+    <section class="headings">
+      <h1 id="idahoName">Idaho Weather Now</h1>
+      <div class="motto">A Fast and Up-to-Date Weather Source</div>
+    </section>
+  </header>
+
+<!-- NAVIGATION HERE -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="preston-4.html">HOME</a></li>
+      <li><a href="#" class="onthispage">Preston</a></li>
+      <li><a href="preston-4.html">Soda Springs</a></li>
+      <li><a href="preston-4.html">Fish Haven</a></li>
+      <li><a href="preston-4.html">Storm Center</a></li>
+      <li><a href="preston-4.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+<!-- CONTENT HERE -->
+  <main>
+    <h2>Preston, Idaho</h2>
+    <div class="placeholder">Hero Image / Weather Summary</div>
+
+    <div class="placeholder">5 Day Forecast</div>
+
+    <div class="placeholder">Article</div>
+
+    <div class="placeholder">Contact Information</div>
+  </main>
+
+<!-- FOOTER HERE -->
+  <footer>
+    &copy; <span id="currentYear"></span> Idaho Weather Now | Attributions | <a href="https://amystephens.github.io/">Amy Stephens</a> 
+    <div id="currentDate"></div>
+  </footer>
+  <script src='js/dates.js'></script>
+  <script src='js/scripts.js'></script>
+
+</body>
+
+</html>
