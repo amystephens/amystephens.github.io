@@ -14,3 +14,14 @@ document.getElementById('currentDate').textContent = new Date().toLocaleDateStri
 //shows current year for copyright
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 
+//function showhide() {
+//    var d = new Date();
+//    var s = document.getElementById(+d.getDay());
+//    s.style.display = (s.style.display == 'block') ? 'none' : 'block';
+//  }
+//
+//  function showhide {
+//    var = currentDate,
+//    if currentDate = "Friday"
+//    then display
+//  }

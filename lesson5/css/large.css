@@ -24,6 +24,10 @@
     padding-top: 8px;
   }
 
+  .landscape {
+    max-width: 967px;
+  }
+
   .headings h1 {
     font-size: 4rem;
     letter-spacing: .3rem;

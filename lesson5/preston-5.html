@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Preston Town Page</title>
   <meta name="description"
@@ -21,8 +21,13 @@
 
 <body>
 
-<!-- HEADER HERE -->
+  <!-- HEADER HERE -->
   <header>
+    <div class="saturdayalert">
+      <span>Saturday = Preston Pancakes in the Park!</span>
+      <span>9:00 am Friday at the City Park.</span>
+      <div id="showFridays" style="display:none"></div>
+    </div>
     <picture>
       <img id="logo" src="images/logos.png" alt="Idaho Weather Now logo.">
     </picture>
@@ -32,7 +37,7 @@
     </section>
   </header>
 
-<!-- NAVIGATION HERE -->
+  <!-- NAVIGATION HERE -->
   <nav class="clearfix">
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
@@ -45,21 +50,77 @@
     </ul>
   </nav>
 
-<!-- CONTENT HERE -->
+  <!-- CONTENT HERE -->
   <main>
     <h2>Preston, Idaho</h2>
-    <div class="placeholder">Hero Image / Weather Summary</div>
+    <div class="picturesummarygroup">
+      <picture>
+        <img class="landscapepic" src="images/landscape.jpg" alt="Photograph featuring a view of an Idaho landscape.">
+      </picture>
+      <div class="weathersummaryoverlay">
+        <!-- <section>
+          <h3 class="gridtitle">Weather Summary</h3> -->
+        <section class="gridleft">Currently:</section>
+        <section>Sunny</section>
+        <section class="gridleft">High:</section>
+        <section>76 °F</section>
+        <section class="gridleft">Wind Chill:</section>
+        <section> °F</section>
+        <section class="gridleft">Humidity:</section>
+        <section> 69%</section>
+        <section class="gridleft">Wind Speed:</section>
+        <section> 5 mph</section>
+      </div>
+    </div>
 
-    <div class="placeholder">5 Day Forecast</div>
+    <div class="forecast">
+      <!-- <p>5 Day Forecast</p> -->
+      <section class="gridtop">Wed</section>
+      <section class="gridtop">Thu</section>
+      <section class="gridtop">Fri</section>
+      <section class="gridtop">Sat</section>
+      <section class="gridtop">Sun</section>
+      <section><img src="images/minisun" alt="sun icon"></section>
+      <section><img src="images/minipartlycloudy" alt="partly cloudy icon"></section>
+      <section><img src="images/minisun" alt="sun icon"></section>
+      <section><img src="images/minisun" alt="sun icon"></section>
+      <section><img src="images/minisun" alt="sun icon"></section>
+      <section>Sunny</section>
+      <section>76 °F</section>
+      <section> °F</section>
+      <section> 69%</section>
+      <section> 5 mph</section>
+    </div>
 
-    <div class="placeholder">Article</div>
+    <div class="article">
+      <picture>
+        <img class="hike" src="images/hike600" alt="Photograph featuring a view of an Idaho landscape.">
+      </picture>
+      <h3>Hiking</h3>
+      <p class="byline">by Amy Stephens</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem, vel ullam nam consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda quasi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem, vel ullam nam consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda quasi.
+        Quia.Repudiandae exercitationem, vel ullam nam consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda quasi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem, vel ullam nam consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda quasi. Quia.</p>
+    </div>
 
-    <div class="placeholder">Contact Information</div>
+    <div class="placeholder">
+      <picture>
+        <img class="map" src="images/map400" alt="map of southeastern Idaho">
+      </picture>
+      <p>Contact Information</p>
+      <p>Contact Information</p>
+      <p>Contact Information</p>
+      <div class="mag">icons go here</div>
+    </div>
   </main>
 
-<!-- FOOTER HERE -->
+  <!-- FOOTER HERE -->
   <footer>
-    &copy; <span id="currentYear"></span> Idaho Weather Now | Attributions | <a href="https://amystephens.github.io/">Amy Stephens</a> 
+    &copy; <span id="currentYear"></span> Idaho Weather Now | Attributions | <a
+      href="https://amystephens.github.io/">Amy Stephens</a>
     <div id="currentDate"></div>
   </footer>
   <script src='js/dates.js'></script>

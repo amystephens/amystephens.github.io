@@ -18,6 +18,81 @@
     margin-left: 19px;
   }
 
+  header {
+  }
+
+
+  .picturesummarygroup {
+    max-width: 100%;
+  }
+  
+  .landscapepic {
+    max-width: 100%;
+  }
+
+  .forecast {
+    display: block;
+    background-color: #ffffff;
+    border: 3px solid #99cccc;
+    font-size: .5rem;
+    width: 75%;
+    height: 70px;
+    left: 1rem;
+    top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: .75rem 1rem 4rem 1rem;
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .forecast img {
+    max-width: 1.9rem;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .weathersummaryoverlay {
+    font-size: .75rem;
+    width: 150px;
+    height: 125px;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(153, 204, 204, .85);
+    padding: 1rem;
+    align-content: center;
+  }
+
+  .article {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 15px;
+   }
+  
+  .byline {
+    font-style: italic;
+    font-size: .8rem;
+    line-height: .5rem;
+  }
+
+  div img {
+    max-width: 350px;
+    float: left;
+    margin: 0 1rem 1rem 0;
+  }
+  h3 {
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0;
+    text-align: left;
+  }
+
   footer {
     font-size: .8rem;
   }
