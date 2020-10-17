@@ -112,7 +112,7 @@ header {
     background-color: #ECD078;
     padding: 1rem 0;
     text-align: center;
-    display: block;
+    display: none;
    }
   
   header img {
