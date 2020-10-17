@@ -25,3 +25,4 @@ document.getElementById("currentYear").textContent = new Date().getFullYear();
 //    if currentDate = "Friday"
 //    then display
 //  }
+
