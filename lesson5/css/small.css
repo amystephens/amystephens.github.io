@@ -78,7 +78,7 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-color: #000000;
+  color: #000000;
 }
 
 .active_onthispage {
@@ -98,49 +98,49 @@ nav ul.hide {
 }
 
 header {
-    background-color: #99cccc;
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  #saturdayAlert {
-    margin: 0 auto;
-    max-width: 100%;
-    background-color: #ECD078;
-    padding: 1rem 0;
-    text-align: center;
-    display: none;
-   }
-  
-  header img {
-    width: 80px;
-    height: auto;
-  }
-  
-  .headings {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .headings h1 {
-    font-size: 1.6rem;
-    /* font-size: 22px; */
-    margin: 0 0 0 17px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    line-height: 1.35;
-    color: #003366;
-  }
-  
-  .motto {
-    letter-spacing: .02rem;
-    color: #000000;
-    margin-left: 17px;
-    font-size: .9rem;
-  }
+  background-color: #99cccc;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#saturdayAlert {
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #ECD078;
+  padding: 1rem 0;
+  text-align: center;
+  display: none;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+  font-size: 1.6rem;
+  /* font-size: 22px; */
+  margin: 0 0 0 17px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  line-height: 1.35;
+  color: #003366;
+}
+
+.motto {
+  letter-spacing: .02rem;
+  color: #000000;
+  margin-left: 17px;
+  font-size: .9rem;
+}
 
 h2 {
   font-family: 'fjalla one', sans-serif;
@@ -172,7 +172,7 @@ h3 {
   max-width: 350px;
   height: 100%;
   position: relative;
-  }
+}
 
 .landscapepic {
   max-width: 350px;
@@ -196,27 +196,19 @@ h3 {
   align-content: center;
   margin: 0 auto;
 }
+
 table {
   background-color: rgb(153, 204, 204, .85);
   margin: auto;
 }
 
+table.weathersummary_box {
+  margin-top: 1.25rem;
+}
+
 .gridleft {
   text-align: right;
 }
-/* Weather Summary Overlay Box */
-
-
-/* .forecast {
-  display: none;
-  margin: 10px;
-  border: 0px;
-  padding: 15px;
-  color: #000000;
-  background-color: #669966;
-  text-align: center;
-} */
-
 
 .forecast {
   display: none;
@@ -281,7 +273,7 @@ div.mapcontact_box {
 }
 
 footer {
-max-width: 1150px;
+  max-width: 1150px;
   margin: auto;
 }
 

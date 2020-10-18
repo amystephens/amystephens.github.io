@@ -2,7 +2,6 @@
 
 function showFridays () {
     var day = new Date;
-    if (day.getDay() == 6) {
-        document.querySelector('#saturdayAlert').style.display = "block";
-    }
-}
+    if (day.getDay() == 5)
+  }
+  showFridays (document.querySelector('#saturdayAlert').style.display = "block");

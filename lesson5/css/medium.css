@@ -18,14 +18,10 @@
     margin-left: 19px;
   }
 
-  header {
-  }
-
-
   .picturesummarygroup {
     max-width: 100%;
   }
-  
+
   .landscapepic {
     max-width: 100%;
   }
@@ -34,89 +30,66 @@
     display: block;
     background-color: #ffffff;
     border: 3px solid #99cccc;
-    font-size: .5rem;
+    font-size: .75rem;
     width: 75%;
     height: 70px;
-    left: 1rem;
-    top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: .75rem 1rem 4rem 1rem;
+    padding: .75rem 1rem 4.5rem 1rem;
     margin: 10px auto;
     text-align: center;
   }
-  
+
   .forecast img {
     max-width: 1.9rem;
     padding: 5px;
     margin: 0 auto;
   }
-  
-/* Weather Summary Overlay Box */
-h3 {
-  font-family: 'fjalla one', sans-serif;
-  font-size: 1rem;
-  letter-spacing: .05rem;
-  line-height: 0;
-  color: #003366;
-  padding-left: 0;
-  text-align: left;
-  margin: 1rem;
-}
 
-.pictureoverlay_box {
-  margin: 10px auto;
-  /* background-color: #99cccc; */
-  max-width: 100%;
-  height: 100%;
-  position: relative;
+  /* Weather Summary Overlay Box */
+  h3 {
+    font-size: 1.25rem;
+    text-align: left;
   }
 
-.landscapepic {
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .pictureoverlay_box {
+    max-width: 100%;
+    height: 100%;
+  }
 
-.overlaycontainer {
-  font-size: .75rem;
-  width: 175px;
-  height: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 8px 8px 8px 8px 8px;
-  row-gap: .7rem;
-  column-gap: .8rem;
-  padding: .75rem 1rem 1.5rem 1rem;
-  align-content: center;
-  margin: 0 auto;
-}
+  .landscapepic {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-table.weathersummary_box {
-  background-color: rgb(153, 204, 204, .85);
-  margin: auto;
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-}
+  .overlaycontainer {
+    font-size: .75rem;
+  }
 
-.gridleft {
-  text-align: right;
-}
-/* Weather Summary Overlay Box */
+  table.weathersummary_box {
+    background-color: rgb(153, 204, 204, .85);
+    margin: auto;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
 
   .article {
     max-width: 100%;
-    margin: 10px auto;
-    padding: 15px;
-   }
-  
+  }
+
+  .article p {
+    font-size: 1rem;
+  }
+
+  .article h3 {
+    font-size: 1.5rem;
+  }
+
   .byline {
-    font-style: italic;
-    font-size: .8rem;
-    line-height: .5rem;
+    line-height: 1.25rem;
   }
 
   img.hike {
@@ -124,30 +97,27 @@ table.weathersummary_box {
     float: left;
     margin: 0 1rem 1rem 0;
   }
- 
+
   div.mapcontact_box {
-    background-color: #99cccc;
-    max-width: 100%;
     height: 310px;
     display: block;
-    margin: 0 auto;
   }
-  
+
   .contact_box p {
-    font-size: .8rem;
-    line-height: .5rem;
+    font-size: 1rem;
   }
 
   .contact_box {
     display: block;
-    padding-top: 1rem;
+    padding-top: .55rem;
   }
 
-  .address, .phone {
+  .address,
+  .phone {
     margin: 2rem 0 3rem 0;
   }
-  
- img.map {
+
+  img.map {
     max-width: 350px;
     padding: 1rem 1rem 1rem 1rem;
     display: block;
