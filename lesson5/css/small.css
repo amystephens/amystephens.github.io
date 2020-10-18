@@ -253,7 +253,6 @@ div.mapcontact_box {
 .map {
   max-width: 350px;
   padding: 1rem 1rem 0rem 1rem;
-  align: left;
   display: none;
 }
 
