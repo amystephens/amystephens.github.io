@@ -1,7 +1,9 @@
-//lesson 5 - determines day of the week and tells to show the alert or not on fridays
-
-function showFridays () {
-    var day = new Date;
-    if (day.getDay() == 5)
-  }
-  showFridays (document.querySelector('#saturdayAlert').style.display = "block");
+var day = new Date();
+var dayofweek = day.getDay();
+  if (dayofweek == 2) {
+  vdocument.querySelector("#saturdayAlert");
+  style.display = "block";
+  //document.body.innerHTML
+//alert works
+  //alert(dayofweek);
+}
