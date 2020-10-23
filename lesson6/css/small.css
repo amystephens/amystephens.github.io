@@ -167,19 +167,30 @@ h3 {
 }
 
 .pictureoverlay_box {
-  margin: 10px auto;
-  /* background-color: #99cccc; */
+  /*margin: 10px auto;
+  background-color: #99cccc;
   max-width: 350px;
-  height: 100%;
+  height: 100%; */
   position: relative;
 }
 
-.landscapepic {
+/* .landscapepic {
   max-width: 350px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+} */
+
+picture.picturecontainer {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
 }
+
+main picture.picturecontainer img {
+  width: 100%;
+}
+
 
 .overlaycontainer {
   font-size: .65rem;

@@ -22,10 +22,6 @@
     max-width: 100%;
   }
 
-  .landscapepic {
-    max-width: 100%;
-  }
-
   .forecast {
     display: block;
     background-color: #ffffff;
@@ -53,16 +49,16 @@
     text-align: left;
   }
 
-  .pictureoverlay_box {
+/*  .pictureoverlay_box {
     max-width: 100%;
     height: 100%;
-  }
+  } 
 
   .landscapepic {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   .overlaycontainer {
     font-size: .75rem;
@@ -72,7 +68,7 @@
     background-color: rgb(153, 204, 204, .85);
     margin: auto;
     position: absolute;
-    left: 1rem;
+    left: 2.25rem;
     top: 1rem;
   }
 

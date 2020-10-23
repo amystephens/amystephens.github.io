@@ -60,10 +60,11 @@
       <h2>Preston, Idaho</h2>
     </div>
     <div class="pictureoverlay_box">
-      <picture>
-        <source srcset="images/hero650.jpg" media="(min-width:575px) and (max-width: 849px)">
-        <source srcset="images/hero1200.jpg" media="(min-width:850px)">
-        <img class="landscapepic" src="images/hero350.jpg" alt="Photograph featuring a view of an Idaho landscape.">
+      <picture class="picturecontainer">
+        <source media="(max-width: 350px)" srcset="images/hero350.jpg" >        
+        <source media="(max-width:650px)" srcset="images/hero650.jpg">
+        <source media="(max-width:950px)" srcset="images/hero950.jpg" >
+        <img class="landscapepic" src="images/hero1200.jpg" alt="Photograph featuring a view of an Idaho landscape.">
       </picture>
       <table class="weathersummary_box">
         <tr>
