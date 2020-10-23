@@ -43,6 +43,10 @@
     margin: 0 auto;
   }
 
+  h2 {
+    line-height: 0;
+  }
+
   /* Weather Summary Overlay Box */
   h3 {
     font-size: 1.25rem;
