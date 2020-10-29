@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--This is my Lesson 4 Preston Town Page-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preston Town Page</title>
+  <meta name="description"
+    content="Week 04 - Weather Site Preston Town Page for Amy Stephens' WDD 230 Frontend Dev class at BYU-Idaho - IdahoWeatherNow.com.">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+  <!-- Message Alert -->
+  <div id="saturdayAlert" style="display: none">
+    <span class="saturday">Saturday = Preston Pancakes in the Park!</span>
+    <br>
+    <span class="saturday">9:00 am Saturday at the City Park.</span>
+  </div>
+
+
+  <!-- HEADER HERE -->
+  <header>
+    <picture>
+      <img id="logo" src="images/logo.svg" alt="Idaho Weather Now logo.">
+    </picture>
+    <section class="headings">
+      <h1 id="idahoName">Idaho Weather Now</h1>
+      <div class="motto">A Fast and Up-to-Date Weather Source</div>
+    </section>
+  </header>
+
+
+
+  <!-- NAVIGATION HERE -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="preston-6.html">HOME</a></li>
+      <li><a href="#" class="active_onthispage">Preston</a></li>
+      <li><a href="preston-6.html">Soda Springs</a></li>
+      <li><a href="preston-6.html">Fish Haven</a></li>
+      <li><a href="preston-6.html">Storm Center</a></li>
+      <li><a href="preston-6.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT HERE -->
+  <main>
+    <div class="townname_box">
+      <h2>Preston, Idaho</h2>
+    </div>
+    <div class="pictureoverlay_box">
+      <picture class="picturecontainer">
+        <source media="(max-width: 350px)" srcset="images/hero350.jpg" >        
+        <source media="(max-width:650px)" srcset="images/hero650.jpg">
+        <source media="(max-width:950px)" srcset="images/hero950.jpg" >
+        <img class="landscapepic" src="images/hero1200.jpg" alt="Photograph featuring a view of an Idaho landscape.">
+      </picture>
+      <table class="weathersummary_box">
+        <tr>
+          <td>
+            <h3>Weather Summary</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="overlaycontainer">
+              <div class="gridleft">Currently:</div>
+              <div>Sunny</div>
+              <div class="gridleft"> Temperature:</div>
+              <div><span id="currenttemp">44</span> °F</div>
+              <div class="gridleft">Wind Chill:</div>
+              <div><span id="windchill">0</span> °F</div>
+              <div class="gridleft">Humidity:</div>
+              <div> 69%</div>
+              <div class="gridleft">Wind Speed:</div>
+              <div><span id="windspeed">4</span>mph</div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="forecast">
+      <!-- <p>5 Day Forecast</p> -->
+      <section class="gridtop">Wed</section>
+      <section class="gridtop">Thu</section>
+      <section class="gridtop">Fri</section>
+      <section class="gridtop">Sat</section>
+      <section class="gridtop">Sun</section>
+      <section><img src="images/minisun.png" alt="sun icon"></section>
+      <section><img src="images/minipartlycloudy.png" alt="partly cloudy icon"></section>
+      <section><img src="images/minisun.png" alt="sun icon"></section>
+      <section><img src="images/minisun.png" alt="sun icon"></section>
+      <section><img src="images/minisun.png" alt="sun icon"></section>
+      <section>Sunny</section>
+      <section>76 °F</section>
+      <section> °F</section>
+      <section> 69%</section>
+      <section> 5 mph</section>
+    </div>
+
+    <div class="article">
+      <picture>
+        <img class="hike" src="images/hike350.jpg" alt="Photograph featuring a view of an Idaho landscape.">
+      </picture>
+      <h3>Hiking</h3>
+      <p class="byline">by Amy Stephens</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem, vel ullam nam consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda
+        quasi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem, vel ullam nam
+        consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda quasi.
+        Quia.Repudiandae exercitationem, vel ullam nam consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda
+        quasi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem, vel ullam nam
+        consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda quasi.
+        Repudiandae exercitationem, vel ullam nam consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda
+        quasi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem, vel ullam nam
+        consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda quasi.
+        Quia.Repudiandae exercitationem, vel ullam nam consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda
+        quasi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem, vel ullam nam
+        consequatur
+        tempora dolorem, nulla earum cumque id a architecto, debitis itaque pariatur soluta quibusdam assumenda quasi.
+        Quia.</p>
+    </div>
+
+
+  </main>
+
+
+  <!-- FOOTER HERE -->
+  <footer>
+    <div class="mapcontact_box">
+      <picture>
+        <img class="map" src="images/map400.jpg" alt="map of southeastern Idaho">
+      </picture>
+      <div class="contact_box">
+        <div class="address">
+          <p>Address:</p>
+          <p>Idaho Weather Now</p>
+          <p>155 N 200 W</p>
+          <p>Preston, ID 83263</p>
+        </div>
+
+        <div class="phone">
+          <p>Call:</p>
+          <p>(208) 555-1030</p>
+          <p>Email:</p>
+          <p>info@IdahoWeatherNow.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot_box">
+      &copy; <span id="currentYear"></span> Idaho Weather Now | Attributions | <a
+        href="https://amystephens.github.io/">Amy Stephens</a>
+      <div id="currentDate"></div>
+    </div>
+  </footer>
+  <script src='js/dates.js'></script>
+  <script src='js/scripts.js'></script>
+  <script src='js/alert.js'></script>
+  <script src="js/windchill.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+
+</body>
+
+</html>
