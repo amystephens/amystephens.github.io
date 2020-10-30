@@ -279,7 +279,7 @@ div picture img[data-src] {
 	filter: blur(0.1em);
 }
 
-div picture img {
+div.gallery picture img {
   border-style: solid;
   border-color: #ffffff;
   border-width: 1rem;
