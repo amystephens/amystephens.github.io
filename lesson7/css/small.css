@@ -17,9 +17,13 @@ html {
 /* grouping them together makes the responsivness work */
 main,
 footer {
-  max-width: 967px;
+  max-width: 1150px;
   margin: 0 auto;
 }
+main {
+  background-color: #eeeeee;
+}
+
 
 /* grouping them together makes the responsivness work */
 header,
@@ -152,7 +156,7 @@ h2 {
   letter-spacing: .05rem;
   line-height: 2.5rem;
   color: #003366;
-  padding-top: 1rem;
+  padding-top: 2.75rem;
   padding-bottom: 1rem;
   padding-left: .6rem;
   text-align: center;
@@ -258,6 +262,32 @@ main img {
   justify-content:center;
   align-items: center;
   margin: 0 auto;
+  padding: 0 1.75rem 3rem 1.75rem;
+}
+
+div p.caption {
+  text-align: center;
+  color: #003366;
+  font-style: italic;
+}
+
+div.photo {
+  background-color: #ffffff;
+}
+
+div picture img[data-src] {
+	filter: blur(0.1em);
+}
+
+div picture img {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1rem;
+  transition: filter 0.5s;
+}
+
+div p.caption {
+  padding: 0 1.75rem 0 1rem;
 }
 
 /* footer */
@@ -273,6 +303,7 @@ div.mapcontact_box {
   max-width: 350px;
   padding: 1rem 1rem 0rem 1rem;
   display: none;
+  border-style: none;
 }
 
 .contact_box {

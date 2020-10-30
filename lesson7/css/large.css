@@ -37,5 +37,25 @@
   .motto {
     font-size: 2rem;
   }
+  /* gallery page css */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  justify-content:center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div.photo:hover {
+  box-shadow: 0 0 25px #333;
+}
+
+div.photo {
+  border: #003366;
+  border-style: none;
+}
+
 
 }
