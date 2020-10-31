@@ -20,8 +20,13 @@ footer {
   max-width: 1150px;
   margin: 0 auto;
 }
-main {
+.maingallery {
   background-color: #eeeeee;
+  margin-top: -26px;
+}
+
+.mainpreston {
+  background-color: #ffffff;
 }
 
 
