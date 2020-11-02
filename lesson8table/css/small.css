@@ -17,6 +17,7 @@ table {
   background-color: #e7f0ed;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 12px 12px 13px 0 rgb(98, 140, 166, 0.85);
 }
 
 td,
