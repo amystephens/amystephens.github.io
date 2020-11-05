@@ -1,0 +1,60 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 72em) {
+
+  nav ul {
+    display: flex;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+    /* 1 1 100px (use 100% the space avaiable and keep them all the same) */
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+
+  header img {
+    width: 150px;
+    padding-top: 8px;
+  }
+
+/*  .landscape {
+    max-width: 967px;
+  } */
+
+  .headings h1 {
+    font-size: 4rem;
+    letter-spacing: .3rem;
+    line-height: 4.5rem;
+  }
+
+  .motto {
+    font-size: 2rem;
+  }
+  /* gallery page css */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  justify-content:center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div.photo:hover {
+  box-shadow: 0 0 25px #333;
+}
+
+div.photo {
+  border: #003366;
+  border-style: none;
+}
+
+}
