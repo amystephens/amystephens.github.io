@@ -413,6 +413,18 @@ form label.toplabel input:required:valid {
   border: solid 2px #eeeeee;
 }
 
+/* ------------------thanks------------------ */
+
+.thanksname_box {
+  padding: 2.5rem 0;
+}
+
+p.thanks {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 2.5rem;
+}
+
 /* ------------------footer------------------ */
 
 div.mapcontact_box {
