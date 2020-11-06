@@ -302,8 +302,7 @@ div p.caption {
 
 /* -------storm center form page css-------- */
 div.formname_box h2 {
-  text-align: left;
-  margin-left: 1.35rem;
+  text-align: center;
 }
 
 form {

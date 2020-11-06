@@ -112,13 +112,9 @@
 /* -------storm center form page css-------- */
 
 form fieldset {
+  margin: 2rem auto;
   width: 100%;
   max-width: 50rem;
-}
-
-div.formname_box h2 {
-  text-align: center;
-  margin-left: 0;
 }
 
 form label.toplabel {
