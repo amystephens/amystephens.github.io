@@ -146,6 +146,12 @@ form label.radio {
   padding: .25rem;
 }
 
+form input.submitBtn {
+  width: 100%;
+  max-width: 20rem;
+  margin: .1rem auto 2.2rem auto;
+}
+
 /* footer */
 
   div.mapcontact_box {
