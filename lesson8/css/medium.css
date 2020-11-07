@@ -147,6 +147,7 @@ form label.radio {
 }
 
 form input.submitBtn {
+  display: block;
   width: 100%;
   max-width: 20rem;
   margin: .1rem auto 2.2rem auto;
