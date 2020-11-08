@@ -1,3 +1,6 @@
+/* large css for Lesson 8 */
+
+
 /* Desktop Views ****************************/
 @media only screen and (min-width: 72em) {
 
@@ -23,10 +26,6 @@
     width: 150px;
     padding-top: 8px;
   }
-
-/*  .landscape {
-    max-width: 967px;
-  } */
 
   .headings h1 {
     font-size: 4rem;

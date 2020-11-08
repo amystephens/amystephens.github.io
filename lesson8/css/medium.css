@@ -1,4 +1,4 @@
-/* medium css for Lesson 4 Preston Town Page */
+/* medium css for Lesson 8 */
 
 /* Tablet Views ******************************/
 @media only screen and (min-width: 36rem) {
@@ -52,17 +52,6 @@
     font-size: 1.25rem;
     text-align: left;
   }
-
-/*  .pictureoverlay_box {
-    max-width: 100%;
-    height: 100%;
-  } 
-
-  .landscapepic {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  } */
 
   .overlaycontainer {
     font-size: .75rem;
@@ -128,7 +117,6 @@ form div.toplabel {
 }
 
 form label.tiptoplabel, form div.tiptoplabel {
-  padding-top: 0rem;
   margin-top: -1.75rem;
 }
 
