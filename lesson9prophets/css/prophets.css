@@ -1,0 +1,88 @@
+/* -------------- Small View -------------- */
+h1 {
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  color: #4d4d95;
+  margin: .5rem 0;
+}
+
+
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .25rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: .75rem;
+  box-shadow: 0 0 25px rgb(18, 25, 28, 0.55);
+
+}
+
+.cards h2, .cards p, footer {
+  text-align: center;
+}
+
+.cards h2 {
+  font-family: 'Bree Serif', serif;
+  color: #4d4d95;
+  margin: .75rem;
+}
+
+.cards p {
+  font-size: .75rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: .5rem;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+div.cards img {
+  display: block;
+  box-shadow: 0 0 15px rgb(18, 25, 28, 0.95);
+  object-fit: cover;
+  height: 160px;
+  max-width: 120px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+main div.cards section {
+  background-color: #b9b9cc;
+  border: solid .01rem black;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+  min-height: 260px;
+  height: auto;
+  padding-bottom: .45rem;
+}
+
+footer {
+  padding: 2rem 0;
+}
+
+
+
+/* -------------- Medium View -------------- */
+
+@media only screen and (min-width: 36rem) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    max-width: 610px;
+    margin: 0 auto;
+  }
+}
+
+
+/* -------------- Large View -------------- */
+
+@media only screen and (min-width: 72em) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1225px;
+    margin: 0 auto;
+  }
+}
