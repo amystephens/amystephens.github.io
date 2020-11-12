@@ -1,0 +1,469 @@
+/* small css for Lesson 8 */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* phone or baseline views **************************/
+/* grouping them together makes the responsivness work */
+
+/*----------- BODY --------------*/
+body {
+  font-size: 16px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/*----------- HEADER --------------*/
+header {
+  background-color: #99cccc;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+/* grouping them together makes the responsivness work */
+header,
+nav {
+  margin: 0 auto;
+}
+
+#saturdayAlert {
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #ECD078;
+  padding: 1rem 0;
+  text-align: center;
+  display: none;
+}
+
+span.saturday {
+  margin: 0 1rem;
+}
+
+/*----------- NAVIGATION --------------*/
+nav button {
+  margin: .2rem 2% .5rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+nav {
+  background-color: #aa0000;
+  font-family: Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  text-align: center;
+}
+
+nav ul li a {
+  font-family: 'fjalla one';
+  font-size: 1rem;
+  letter-spacing: .25rem;
+  text-decoration: none;
+  /* gets rid of underline */
+  color: #ffffff;
+  line-height: 2rem;
+  display: block;
+  /* this makes the whole block clickable */
+}
+
+nav ul li a:hover {
+  background-color: #ECD078;
+}
+
+nav ul li a:active {
+  color: #000000;
+}
+
+.active_onthispage {
+  background-color: #ECD078;
+  color: #990000;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/*----------- MAIN --------------*/
+
+main,
+footer {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.maingallery {
+  background-color: #eeeeee;
+  margin-top: -26px;
+}
+
+.mainpreston {
+  background-color: #ffffff;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  font-size: .85rem;
+  line-height: 1.2rem;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.headings h1 {
+  font-size: 1.6rem;
+  /* font-size: 22px; */
+  margin: 0 0 0 17px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  line-height: 1.35;
+  color: #003366;
+}
+
+.motto {
+  letter-spacing: .02rem;
+  color: #000000;
+  margin-left: 17px;
+  font-size: .9rem;
+}
+
+h2 {
+  font-family: 'fjalla one', sans-serif;
+  font-size: 2rem;
+  letter-spacing: .05rem;
+  line-height: 2.5rem;
+  color: #003366;
+  padding-top: 2.75rem;
+  padding-bottom: 1rem;
+  padding-left: .6rem;
+  text-align: center;
+}
+/* Weather Summary Overlay Box */
+h3 {
+  font-family: 'fjalla one', sans-serif;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  line-height: 0;
+  color: #003366;
+  padding-left: 0;
+  text-align: center;
+  margin: 1rem;
+}
+
+.pictureoverlay_box {
+  position: relative;
+}
+
+picture.picturecontainer {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main picture.picturecontainer img {
+  width: 100%;
+}
+
+
+.overlaycontainer {
+  font-size: .65rem;
+  width: 175px;
+  height: 100px;
+  left: 1rem;
+  top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8px 8px 8px 8px 8px;
+  row-gap: .7rem;
+  column-gap: .8rem;
+  padding: .75rem 1rem 1.5rem 1rem;
+  align-content: center;
+  margin: 0 auto;
+}
+
+table {
+  background-color: rgb(153, 204, 204, .85);
+  margin: auto;
+}
+
+table.weathersummary_box {
+  margin-top: 1.25rem;
+}
+
+.gridleft {
+  text-align: right;
+}
+
+.forecast {
+  display: none;
+}
+
+.article {
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 15px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.byline {
+  font-style: italic;
+  font-size: .8rem;
+  line-height: .5rem;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ------gallery page css------ */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  justify-content:center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1.75rem 3rem 1.75rem;
+}
+
+div p.caption {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+div.photo {
+  background-color: #ffffff;
+}
+
+div picture img[data-src] {
+	filter: blur(0.1em);
+}
+
+div.gallery picture img {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1rem;
+  transition: filter 0.5s;
+}
+
+div p.caption {
+  padding: 0 1.75rem 0 1rem;
+}
+
+/* -------storm center form page css-------- */
+div.formname_box h2 {
+  text-align: center;
+}
+
+form {
+  padding: 0 2rem;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 3px solid #99cccc;
+  border-radius: .8rem;
+  padding: 1rem 1rem;
+  background-color: #99cccc;
+}
+
+form legend {
+  color: #003366;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  padding: 0 .75rem 2.5rem 0;
+  margin-left: -1rem;
+}
+
+form label.toplabel {
+  display: block;
+  padding-top: 1rem;
+  color: #003366;
+  font-size: .8rem;
+  line-height: 1.25rem;
+}
+
+form div.toplabel {
+  display: block;
+  padding-top: 1rem;
+  color: #003366;
+  font-size: .8rem;
+  line-height: 1.25rem;
+}
+
+form label.tiptoplabel, form div.tiptoplabel {
+  padding-top: 0rem;
+  margin-top: -1.5rem;
+}
+
+form label.toplabel input, form label.toplabel select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: .8rem;
+  border: solid 2px #eeeeee;
+  border-radius: .1rem;
+  padding: .75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: #eeeeee;
+  margin-bottom: .5rem;
+}
+
+form label.range{
+  display: block;
+  padding: 1.5rem 0 .1rem 0;
+  font-size: .8rem;
+  color: #003366;
+}
+
+input.rangeinput {
+  display: block;
+  margin-top: .5rem;
+  margin-bottom: .45rem;
+}
+
+form label.radio {
+  display: block;
+  font-size: .8rem;
+  padding: .5rem 0;
+  color: #003366;
+}
+
+textarea.commentbox {
+  margin-top: .35rem;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #ECD078;
+  color: #003366;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border-radius: .1rem;
+  padding: .75rem 1.5rem;
+  margin: .1rem 0 2.2rem 0;
+  width: 100%;
+  max-width: 20rem;
+  border: 3px solid #ECD078;
+  border-radius: .8rem;
+}
+
+form input.submitBtn:hover {
+  color: #990000;
+}
+
+form label.toplabel input:required {
+  border: solid 2px #990000;
+}
+
+form label.toplabel input:required:valid {
+  border: solid 2px #eeeeee;
+}
+
+/* ------------------thanks------------------ */
+
+.thanksname_box {
+  padding: 2.5rem 0;
+}
+
+p.thanks {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+/* ------------------footer------------------ */
+
+div.mapcontact_box {
+  background-color: #99cccc;
+  max-width: 100%;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.map {
+  max-width: 350px;
+  padding: 1rem 1rem 0rem 1rem;
+  display: none;
+  border-style: none;
+}
+
+.contact_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.contact_box p {
+  font-size: .8rem;
+  line-height: .5rem;
+  padding: 0 1rem;
+}
+
+.foot_box {
+  background-color: #003366;
+  color: #ffffff;
+  font-size: .7rem;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 1150px;
+}
+
+footer {
+  max-width: 1150px;
+  margin: auto;
+}
+
+footer a:link,
+footer a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffcc66;
+}

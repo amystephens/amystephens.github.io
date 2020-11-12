@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--This is my Lesson 4 Preston Town Page-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storm Center</title>
+  <meta name="description"
+    content="Weather Site Storm Center Page for Amy Stephens' WDD 230 Frontend Dev class at BYU-Idaho - IdahoWeatherNow.com.">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+  <!-- Message Alert -->
+  <div id="saturdayAlert">
+    <span class="saturday">Saturday = Preston Pancakes in the Park!</span>
+    <br>
+    <span class="saturday">9:00 am Saturday at the City Park.</span>
+  </div>
+
+
+  <!-- HEADER HERE -->
+  <header>
+    <picture>
+      <img id="logo" src="images/logo.svg" alt="Idaho Weather Now logo.">
+    </picture>
+    <section class="headings">
+      <h1 id="idahoName">Idaho Weather Now</h1>
+      <div class="motto">A Fast and Up-to-Date Weather Source</div>
+    </section>
+  </header>
+
+
+
+  <!-- NAVIGATION HERE -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="stormcenter-8.html">HOME</a></li>
+      <li><a href="preston-8.html">Preston</a></li>
+      <li><a href="stormcenter-8.html">Soda Springs</a></li>
+      <li><a href="stormcenter-8.html">Fish Haven</a></li>
+      <li><a class="active_onthispage" href="stormcenter-8.html">Storm Center</a></li>
+      <li><a href="gallery-8.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT HERE -->
+  <main class="mainform">
+    <div class="formname_box">
+      <h2>Storm Center Report</h2>
+    </div>
+    <form method="GET" action="thanks.html">
+      <fieldset>
+          <legend>Your Information</legend>
+          
+          <label class="toplabel tiptoplabel">Full Name* <input type="text" name="name"  minlength="5" pattern="[a-zA-Z ]+" required></label>
+          
+          <label class="toplabel">Email <input type="email" name="email" placeholder="yourname@gmail.com"></label>
+
+          <label class="toplabel">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                   
+          <label class="toplabel">Zipcode* <input type="number" name="zip" placeholder="01234" required></label>
+      </fieldset>
+
+      <fieldset>
+          <legend>Storm Information</legend>
+
+          <label class="toplabel tiptoplabel">Storm Date <input type="date" name="completedDate"></label>
+
+          <label class="toplabel">Type of Storm <input list="list" id="stormlist" name="stormlist">
+          <datalist id="list">
+            <option value="Blizzard">
+            <option value="Flood">
+            <option value="Freezing Rain">
+            <option value="Frozen Nose Hairs - Severe Cold">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+            <option value="Wind">
+          </datalist>  
+        </label>
+
+        <label class="range">Select Storm Severity: (1=Mild and 10=Extreme) 
+          <input type="range" min="1" max="10" value="5" class="rangeinput" id="slidernumber" name="severity">
+          <span id="showusernumber"></span>
+          out of 10
+        </label>
+
+        <label class="toplabel">Storm Region <select name="region">
+            <option value="" selected disabled>&#9662; Select a Region</option>
+            <option value="fish haven">Fish Haven</option>
+            <option value="preston">Preston</option>
+            <option value="soda springs">Soda Springs</option>
+        </select>
+        </label>        
+      </fieldset>
+
+      <fieldset>
+          <legend>Additional Information</legend>
+          <div class="toplabel tiptoplabel">Are You in Mortal Danger?</div>
+          <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
+          <label class="radio"><input type="radio" name="danger" value="maybe"> Maybe</label>
+          <label class="radio"><input type="radio" name="danger" value="no"> No</label>
+          
+          <div class="toplabel">
+            Comments:
+          </div>
+          <label class="commentbox" name="comments"> 
+            <textarea name="comments" class="commentbox" rows="7" cols="50" wrap="soft" placeholder="Is there anything else we need to know?"></textarea>
+          </label>
+      </fieldset>
+
+      <input type="submit" value="Report the Storm" class="submitBtn">
+
+  </form>
+      
+  </main>
+
+
+  <!-- FOOTER HERE -->
+  <footer>
+    <div class="mapcontact_box">
+      <picture>
+        <img class="map" src="images/map400.jpg" alt="map of southeastern Idaho">
+      </picture>
+      <div class="contact_box">
+        <div class="address">
+          <p>Address:</p>
+          <p>Idaho Weather Now</p>
+          <p>155 N 200 W</p>
+          <p>Preston, ID 83263</p>
+        </div>
+
+        <div class="phone">
+          <p>Call:</p>
+          <p>(208) 555-1030</p>
+          <p>Email:</p>
+          <p>info@IdahoWeatherNow.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot_box">
+      &copy; <span id="currentYear"></span> Idaho Weather Now | Attributions | <a
+        href="https://amystephens.github.io/">Amy Stephens</a>
+      <div id="currentDate"></div>
+    </div>
+  </footer>
+  <script src='js/progressiveloading.js'></script>
+  <script src='js/dates.js'></script>
+  <script src='js/scripts.js'></script>
+  <script src='js/alert.js'></script>
+  <script src="js/slidervalue.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+
+</body>
+
+</html>
