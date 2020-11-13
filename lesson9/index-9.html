@@ -46,8 +46,8 @@
   <nav class="clearfix">
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
-      <li><a href="index-9.html">HOME</a></li>
-      <li><a href="#" class="active_onthispage">Preston</a></li>
+      <li><a href="index-9.html" class="active_onthispage">HOME</a></li>
+      <li><a href="preston-9.html">Preston</a></li>
       <li><a href="preston-9.html">Soda Springs</a></li>
       <li><a href="preston-9.html">Fish Haven</a></li>
       <li><a href="stormcenter-9.html">Storm Center</a></li>
@@ -57,11 +57,25 @@
 
   <!-- CONTENT HERE -->
   <main class="mainpreston">
-    <div class="townname_box">
-      <h2>Idaho Weather Now</h2>
+    <div class="pictureoverlay_box">
+      <picture class="picturecontainer">
+        <source media="(max-width: 350px)" srcset="images/homehero350.jpg" >        
+        <source media="(max-width:650px)" srcset="images/homehero650.jpg">
+        <source media="(max-width:950px)" srcset="images/homehero950.jpg" >
+        <img class="landscapepic" src="images/homehero1200.jpg" alt="Photograph featuring a view of an Idaho landscape.">
+      </picture>
     </div>
-    <div class="cards"></div>
     
+    <div class="cards"></div>
+
+    <div class="article">
+      <h3>Local Outdoor Adventures</h3>
+      <p class="byline">by Deb Bradshaw</p>
+      <p>Winter is here and it is already cold outside making it the perfect opportunity to take a short drive to visit Lava Hot Springs and warm up. Their Geothermal Hot Springs range from 102˚ to 112˚ and are a fun way to relax. If you are looking for a deal, Wednesdays are their Family Deal Day. Get a family pass for up to four people for only $18.50. If you are wanting to take friends or family with you, group rates are also available. Advance tickets can be purchased through their website to make it easy to plan ahead.</p>
+      <picture>
+        <img class="hike" src="images/lava350.jpg" alt="Photograph featuring a view of an Idaho landscape.">
+      </picture>
+    </div>
 
 
   </main>

@@ -23,7 +23,7 @@ fetch(requestURL)
         founded.textContent = 'Year Founded: ' + town[i].yearFounded;
         population.textContent = 'Population: ' + town[i].currentPopulation;
         rainfall.textContent = 'Annual Rain Fall: ' + town[i].averageRainfall;
-        image.setAttribute('src', '/lesson9/' + town[i].photo);
+        image.setAttribute('src', 'images/' + town[i].photo);
         image.setAttribute('alt', 'Picture of ' +  town[i].name);
 
         card.appendChild(h2);
