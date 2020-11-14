@@ -122,6 +122,7 @@ footer {
   max-width: 1150px;
   margin: 0 auto;
 }
+
 .maingallery {
   background-color: #eeeeee;
   margin-top: -26px;
@@ -171,7 +172,8 @@ h2 {
   padding-left: .6rem;
   text-align: center;
 }
-/* Weather Summary Overlay Box */
+
+/* --------Weather Summary Overlay Box------- */
 h3 {
   font-family: 'fjalla one', sans-serif;
   font-size: 1rem;
@@ -258,7 +260,7 @@ main img {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding: 0 1.75rem 3rem 1.75rem;
@@ -275,7 +277,7 @@ div.photo {
 }
 
 div picture img[data-src] {
-	filter: blur(0.1em);
+  filter: blur(0.1em);
 }
 
 div.gallery picture img {
@@ -290,6 +292,7 @@ div p.caption {
 }
 
 /* -------storm center form page css-------- */
+
 div.formname_box h2 {
   text-align: center;
 }
@@ -331,12 +334,14 @@ form div.toplabel {
   line-height: 1.25rem;
 }
 
-form label.tiptoplabel, form div.tiptoplabel {
+form label.tiptoplabel,
+form div.tiptoplabel {
   padding-top: 0rem;
   margin-top: -1.5rem;
 }
 
-form label.toplabel input, form label.toplabel select {
+form label.toplabel input,
+form label.toplabel select {
   -webkit-appearance: none;
   display: block;
   font-size: .8rem;
@@ -349,7 +354,7 @@ form label.toplabel input, form label.toplabel select {
   margin-bottom: .5rem;
 }
 
-form label.range{
+form label.range {
   display: block;
   padding: 1.5rem 0 .1rem 0;
   font-size: .8rem;
@@ -432,11 +437,11 @@ div.cardText p {
 
 div.cardText h2 {
   letter-spacing: .05rem;
-    line-height: 2.5rem;
-    padding-top: 0;
-    padding-bottom: 0rem;
-    padding-left: 0rem;
-    margin-block-end: 0;
+  line-height: 2.5rem;
+  padding-top: 0;
+  padding-bottom: 0rem;
+  padding-left: 0rem;
+  margin-block-end: 0;
 }
 
 div.cardText p.motto {
@@ -469,9 +474,9 @@ main div.cards section {
 /* ---------------adventure article--------------- */
 
 .adventures {
-background-color: #eeeeee;
-padding: 1.5rem;
-width: 94%;
+  background-color: #eeeeee;
+  padding: 1.5rem;
+  width: 94%;
 }
 
 div.adventures img {
@@ -487,7 +492,6 @@ div.adventures h3 {
   margin: 0;
   padding-top: 1rem;
 }
-
 
 /* ------------------wireframe pngs------------------ */
 

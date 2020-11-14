@@ -47,7 +47,7 @@
     line-height: 0;
   }
 
-  /* Weather Summary Overlay Box */
+  /* -------Weather Summary Overlay Box------- */
   h3 {
     font-size: 1.25rem;
     text-align: left;
@@ -87,212 +87,108 @@
     margin: 0 1rem 1rem 0;
   }
 
-/* gallery page css */
+  /* --------------gallery page css-------------- */
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  justify-content:center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-/* -------storm center form page css-------- */
-
-form fieldset {
-  margin: 2rem auto;
-  width: 100%;
-  max-width: 50rem;
-}
-
-form label.toplabel {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-form div.toplabel {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-form label.tiptoplabel, form div.tiptoplabel {
-  margin-top: -1.75rem;
-}
-
-form label.toplabel input, form label.toplabel select {
-  font-size: 1rem;
-  padding: .4rem;
-}
-
-form label.range {
-  font-size: 1rem;
-}
-
-form label.radio {
-  font-size: 1rem;
-  padding: .25rem;
-}
-
-form input.submitBtn {
-  display: block;
-  width: 100%;
-  max-width: 20rem;
-  margin: .1rem auto 2.2rem auto;
-}
-
-/* --------------index town cards my version------ */
-/*
-.cards p, .cards h2 {
-  text-align: left;
-  padding-left: 2rem;
-}
-
-main div.cards section {
-  background-color: #ffffff;
-  border: solid 1.5rem #ECD078;
-  margin: 0 auto;
-  max-width: 700px;
-  width: 100%;
-  min-height: 310px;
-  height: auto;
-  position: relative;
-}
-
-div.cards img {
-    display: inline-block;
-    max-width: 350px;
-    width: 100%;
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    padding-top: 0rem;
-    position: absolute;
-    right: 0rem;
-    top: 0rem;
-  }
-  div.cards section:nth-child(2) img{
-    background-color: red;
-    position: absolute;
-    left: -19rem;
-    top: 0rem;   
   }
 
-  div.cards section:nth-child(2) p, div.cards section:nth-child(2) h2{
-    text-align: right;
-    padding-left: 0;
-    padding-right: 2rem;
-  }
-  */
+  /* -------storm center form page css-------- */
 
-  /* --------------index town cards flex version------ */
-/*
-  div.cards {
-    display: none;
-  }
-
-  div.cardsmedium {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 1rem auto;
-   
-  }
-
-  .cardsmedium div {
-    margin: auto;
-    padding: 1rem;
-  }
-
-  .cardsmedium section {
+  form fieldset {
+    margin: 2rem auto;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 1rem auto;    
-    background-color: #ffffff;
-    border: solid 1.5rem #ECD078;
-    
+    max-width: 50rem;
   }
 
-  .cardsmedium section:nth-child(odd) {
-    flex-direction: row-reverse;
+  form label.toplabel {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
-  .cardsmedium h2 {
-    line-height: 2rem;
+  form div.toplabel {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
-  .cardsmedium img {
-    max-width: 50%;
-    display: flex;
-    margin: 0 auto;
+  form label.tiptoplabel,
+  form div.tiptoplabel {
+    margin-top: -1.75rem;
+  }
+
+  form label.toplabel input,
+  form label.toplabel select {
+    font-size: 1rem;
+    padding: .4rem;
+  }
+
+  form label.range {
+    font-size: 1rem;
+  }
+
+  form label.radio {
+    font-size: 1rem;
+    padding: .25rem;
+  }
+
+  form input.submitBtn {
     display: block;
-
+    width: 100%;
+    max-width: 20rem;
+    margin: .1rem auto 2.2rem auto;
   }
-  */
 
-  /* --------------index town cards grid version------ */
-  
-  
   div.cards {
     display: block;
     width: 100%;
     grid-template-rows: 1fr;
-}
+  }
 
-main div.cards section{
+  main div.cards section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin-bottom: 1rem;
     max-width: 650px;
-}
+  }
 
-div.cardImg img {
-  padding-top: 0;
-  object-fit: cover;
-  height: 100%;
-  width: auto;
-} 
+  div.cardImg img {
+    padding-top: 0;
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+  }
 
-div.cardText p, div.cardText h2 {
-  text-align: left;
-  padding-left: 2rem;
-}
+  div.cardText p,
+  div.cardText h2 {
+    text-align: left;
+    padding-left: 2rem;
+  }
 
-div.cardText p.motto {
-  font-size: 1rem;
-  margin-left: 0;
-}
+  div.cardText p.motto {
+    font-size: 1rem;
+    margin-left: 0;
+  }
 
-/* div.cardImg img {
-    display: block;
-    width: 100%;
+  div.cards section:nth-child(2) img {
     order: 1;
-}
+  }
 
-div.cards section h2, div.cards section p {
-    box-sizing: border-box;
-    display: block;
+  div.cards section:nth-child(2) .cardText {
     order: 2;
-} */
-
-div.cards section:nth-child(2) img {
-    order: 1;
-}
-
-div.cards section:nth-child(2) .cardText {
-    order: 2;
-}
-
-
-
-
-
+  }
 
   /* ------------adventure article------------ */
 
   div.adventures {
     display: block;
   }
+
   div.adventures img {
     float: right;
     padding-left: 1rem;
@@ -305,9 +201,9 @@ div.cards section:nth-child(2) .cardText {
 
   .adventures {
     width: 96%;
-    }
+  }
 
-/* footer */
+  /* footer */
 
   div.mapcontact_box {
     height: 310px;
