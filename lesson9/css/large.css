@@ -58,10 +58,6 @@ div.photo {
 
 /* --------------index cards-------------- */
 
-div.cardsmedium {
-  display: none;
-}
-
 div.cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -74,11 +70,12 @@ div.cards {
 
 }
 
-.cards p {
+div.cardText p, div.cardText h2 {
   text-align: center;
+  padding-left: 0;
 }
 
-.cards h2 {
+div.cardText h2 {
   letter-spacing: .05rem;
     line-height: 2.5rem;
     padding-top: 0;
@@ -87,28 +84,25 @@ div.cards {
     margin-block-end: 0;
 }
 
-.cards p {
-  line-height: .5rem;
-}
-
-section:nth-child(1) {
-  font-style: italic;
-}
-
-div.cards img {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 1rem;
-}
-
 main div.cards section {
+  display: block;
   background-color: #ffffff;
   border: solid 1.5rem #ECD078;
   margin: 0 auto;
   width: 100%;
   max-width: 350px;
-  min-height: 260px;
+  min-height: 490px;
+  height: auto;
+  position: relative;
+}
+
+div.cardImg img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  position: absolute;
+  bottom: 0;
   height: auto;
 }
 

@@ -141,7 +141,7 @@ form input.submitBtn {
   margin: .1rem auto 2.2rem auto;
 }
 
-/* --------------index cards my version------ */
+/* --------------index town cards my version------ */
 /*
 .cards p, .cards h2 {
   text-align: left;
@@ -182,6 +182,9 @@ div.cards img {
     padding-right: 2rem;
   }
   */
+
+  /* --------------index town cards flex version------ */
+/*
   div.cards {
     display: none;
   }
@@ -224,25 +227,85 @@ div.cards img {
     display: block;
 
   }
+  */
 
-
-
+  /* --------------index town cards grid version------ */
   
+  
+  div.cards {
+    display: block;
+    width: 100%;
+    grid-template-rows: 1fr;
+}
+
+main div.cards section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 1rem;
+    max-width: 650px;
+}
+
+div.cardImg img {
+  padding-top: 0;
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+} 
+
+div.cardText p, div.cardText h2 {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+div.cardText p.motto {
+  font-size: 1rem;
+  margin-left: 0;
+}
+
+/* div.cardImg img {
+    display: block;
+    width: 100%;
+    order: 1;
+}
+
+div.cards section h2, div.cards section p {
+    box-sizing: border-box;
+    display: block;
+    order: 2;
+} */
+
+div.cards section:nth-child(2) img {
+    order: 1;
+}
+
+div.cards section:nth-child(2) .cardText {
+    order: 2;
+}
+
+
+
+
 
 
   /* ------------adventure article------------ */
 
   div.adventures {
-    display: flex;
+    display: block;
   }
   div.adventures img {
-    padding-right: 1rem;
+    float: right;
+    padding-left: 1rem;
     width: 350px;
   }
 
-  div.adventuretext {
+  div.adventuretext h3 {
     margin-top: -1.3rem;
   }
+
+  .adventures {
+    width: 96%;
+    }
 
 /* footer */
 
