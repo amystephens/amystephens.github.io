@@ -143,45 +143,50 @@
     margin: .1rem auto 2.2rem auto;
   }
 
-  div.cards {
-    display: block;
-    width: 100%;
-    grid-template-rows: 1fr;
-  }
+/* --------------index town cards-------------- */
 
-  main div.cards section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-bottom: 1rem;
-    max-width: 650px;
-  }
+div.cards {
+  display: block;
+  grid-template-rows: 1fr;
+}
 
-  div.cardImg img {
-    padding-top: 0;
-    object-fit: cover;
-    height: 100%;
-    width: auto;
-  }
+main div.cards section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 1rem;
+  max-width: 98%;
+  width: auto;
+  min-height: auto;
+}
 
-  div.cardText p,
-  div.cardText h2 {
-    text-align: left;
-    padding-left: 2rem;
-  }
+div.cardImg img {
+  padding-top: 0;
+  float: right;
+  max-width: 570px;
+  min-height: 200px;
+  object-fit: cover;
+}
 
-  div.cardText p.motto {
-    font-size: 1rem;
-    margin-left: 0;
-  }
+div.cardText p,
+div.cardText h2 {
+  text-align: left;
+  padding-left: 2rem;
+}
 
-  div.cards section:nth-child(2) img {
-    order: 1;
-  }
+div.cardText p.motto {
+  font-size: 1rem;
+  margin-left: 0;
+}
 
-  div.cards section:nth-child(2) .cardText {
-    order: 2;
-  }
+div.cards section:nth-child(2) img {
+  order: 1;
+  float: left;
+}
+
+div.cards section:nth-child(2) .cardText {
+  order: 2;
+}
 
   /* ------------adventure article------------ */
 
