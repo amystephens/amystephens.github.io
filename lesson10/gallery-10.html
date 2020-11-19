@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--This is my Gallery Page-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Page</title>
+  <meta name="description"
+    content="Weather Site Gallery Page for Amy Stephens' WDD 230 Frontend Dev class at BYU-Idaho - IdahoWeatherNow.com.">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+  <!-- Message Alert -->
+  <div id="saturdayAlert">
+    <span class="saturday">Saturday = Preston Pancakes in the Park!</span>
+    <br>
+    <span class="saturday">9:00 am Saturday at the City Park.</span>
+  </div>
+
+
+  <!-- HEADER HERE -->
+  <header>
+    <picture>
+      <img id="logo" src="images/logo.svg" alt="Idaho Weather Now logo.">
+    </picture>
+    <section class="headings">
+      <h1 id="idahoName">Idaho Weather Now</h1>
+      <div class="motto">A Fast and Up-to-Date Weather Source</div>
+    </section>
+  </header>
+
+
+
+  <!-- NAVIGATION HERE -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="index-10.html">HOME</a></li>
+      <li><a href="preston-10.html">Preston</a></li>
+      <li><a href="gallery-10.html">Soda Springs</a></li>
+      <li><a href="gallery-10.html">Fish Haven</a></li>
+      <li><a href="stormcenter-10.html">Storm Center</a></li>
+      <li><a class="active_onthispage" href="gallery-10.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT HERE -->
+  <main class="maingallery">
+    <div class="townname_box">
+      <h2>Gallery</h2>
+    </div>
+    <div class="gallery">
+      <div class="photo image1">
+          <picture>
+            <img src="images/placeholder.png" data-src="images/tulips600.jpg" alt="photo of tulips in the rain">
+          </picture>
+          <p class="caption">Photo by Michael Podger</p>
+      </div>
+      <div class="photo image2">
+        <picture>
+          <img src="images/placeholder.png" data-src="images/structure600.jpg" alt="photo of wooden structure in a field">
+        </picture>
+        <p class="caption">Photo by Mxx Ssxx</p>
+      </div>
+      <div class="photo image3">
+        <picture>
+          <img src="images/placeholder.png" data-src="images/raining600.jpg" alt="photo of rain falling into a puddle">
+        </picture>
+        <p class="caption">Photo by Reza Shayestehpour</p>
+      </div>
+      <div class="photo image4">
+        <picture>
+          <img src="images/placeholder.png" data-src="images/wheat600.jpg" alt="photo of a wheat field">
+        </picture>
+        <p class="caption">Photo by Stanislav Kondratiev</p>
+      </div>
+      <div class="photo image5">
+        <picture>
+          <img src="images/placeholder.png" data-src="images/winter600.jpg" alt="photo of snow on mountains">
+        </picture>
+        <p class="caption">Photo by Michael Hacker</p>
+      </div>
+      <div class="photo image6">
+        <picture>
+          <img src="images/placeholder.png" data-src="images/lightning600.jpg" alt="photo of lightning">
+        </picture>
+        <p class="caption">Photo by Max Larochelle</p>
+      </div>
+      <div class="photo image7">
+        <picture>
+          <img src="images/placeholder.png" data-src="images/snow600.jpg" alt="photo of snow on a flower">
+        </picture>
+        <p class="caption">Photo by Hide Obara</p>
+      </div>
+      <div class="photo image8">
+        <picture>
+          <img src="images/placeholder.png" data-src="images/sunrise600.jpg" alt="photo of sunrise">
+        </picture>
+        <p class="caption">Photo by Federico Respini</p>
+      </div>
+      <div class="photo image9">
+        <picture>
+          <img src="images/placeholder.png" data-src="images/weed600.jpg" alt="photo of weeds and the sunset">
+        </picture>
+        <p class="caption">Photo by Jeremy Bishop</p>
+      </div>
+    </div>
+      
+  </main>
+
+
+  <!-- FOOTER HERE -->
+  <footer>
+    <div class="mapcontact_box">
+      <picture>
+        <img class="map" src="images/map400.jpg" alt="map of southeastern Idaho">
+      </picture>
+      <div class="contact_box">
+        <div class="address">
+          <p>Address:</p>
+          <p>Idaho Weather Now</p>
+          <p>155 N 200 W</p>
+          <p>Preston, ID 83263</p>
+        </div>
+
+        <div class="phone">
+          <p>Call:</p>
+          <p>(208) 555-1030</p>
+          <p>Email:</p>
+          <p>info@IdahoWeatherNow.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot_box">
+      &copy; <span id="currentYear"></span> Idaho Weather Now | Attributions | <a
+        href="https://amystephens.github.io/">Amy Stephens</a>
+      <div id="currentDate"></div>
+    </div>
+  </footer>
+  <script src='js/progressiveloading.js'></script>
+  <script src='js/dates.js'></script>
+  <script src='js/scripts.js'></script>
+  <script src='js/alert.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+
+</body>
+
+</html>

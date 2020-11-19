@@ -62,23 +62,24 @@
     </div>
     <form method="GET" action="thanks.html">
       <fieldset>
-          <legend>Your Information</legend>
-          
-          <label class="toplabel tiptoplabel">Full Name* <input type="text" name="name"  minlength="5" pattern="[a-zA-Z ]+" required></label>
-          
-          <label class="toplabel">Email <input type="email" name="email" placeholder="yourname@gmail.com"></label>
+        <legend>Your Information</legend>
 
-          <label class="toplabel">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                   
-          <label class="toplabel">Zipcode* <input type="number" name="zip" placeholder="01234" required></label>
+        <label class="toplabel tiptoplabel">Full Name* <input type="text" name="name" minlength="5" pattern="[a-zA-Z ]+"
+            required></label>
+
+        <label class="toplabel">Email <input type="email" name="email" placeholder="yourname@gmail.com"></label>
+
+        <label class="toplabel">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+
+        <label class="toplabel">Zipcode* <input type="number" name="zip" placeholder="01234" required></label>
       </fieldset>
 
       <fieldset>
-          <legend>Storm Information</legend>
+        <legend>Storm Information</legend>
 
-          <label class="toplabel tiptoplabel">Storm Date <input type="date" name="completedDate"></label>
+        <label class="toplabel tiptoplabel">Storm Date <input type="date" name="completedDate"></label>
 
-          <label class="toplabel">Type of Storm <input list="list" id="stormlist" name="stormlist">
+        <label class="toplabel">Type of Storm <input list="list" id="stormlist" name="stormlist">
           <datalist id="list">
             <option value="Blizzard">
             <option value="Flood">
@@ -89,10 +90,10 @@
             <option value="Thunderstorm">
             <option value="Tornado">
             <option value="Wind">
-          </datalist>  
+          </datalist>
         </label>
 
-        <label class="range">Select Storm Severity: (1=Mild and 10=Extreme) 
+        <label class="range">Select Storm Severity: (1=Mild and 10=Extreme)
           <input type="range" min="1" max="10" value="5" class="rangeinput" id="slidernumber" name="severity">
           <span id="showusernumber"></span>
           out of 10
@@ -103,28 +104,29 @@
             <option value="fish haven">Fish Haven</option>
             <option value="preston">Preston</option>
             <option value="soda springs">Soda Springs</option>
-        </select>
-        </label>        
+          </select>
+        </label>
       </fieldset>
 
       <fieldset>
-          <legend>Additional Information</legend>
-          <div class="toplabel tiptoplabel">Are You in Mortal Danger?</div>
-          <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
-          <label class="radio"><input type="radio" name="danger" value="maybe"> Maybe</label>
-          <label class="radio"><input type="radio" name="danger" value="no"> No</label>
-          
-        <label class="commentbox toplabel"> 
-            Comments:
-            <br>
-            <textarea name="comments" class="commentbox" rows="7" cols="50" wrap="soft" placeholder="Is there anything else we need to know?"></textarea>
-          </label>
+        <legend>Additional Information</legend>
+        <div class="toplabel tiptoplabel">Are You in Mortal Danger?</div>
+        <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
+        <label class="radio"><input type="radio" name="danger" value="maybe"> Maybe</label>
+        <label class="radio"><input type="radio" name="danger" value="no"> No</label>
+
+        <label class="commentbox toplabel">
+          Comments:
+          <br>
+          <textarea name="comments" class="commentbox" rows="7" cols="50" wrap="soft"
+            placeholder="Is there anything else we need to know?"></textarea>
+        </label>
       </fieldset>
 
       <input type="submit" value="Report the Storm" class="submitBtn">
 
-  </form>
-      
+    </form>
+
   </main>
 
 
@@ -162,7 +164,7 @@
   <script src='js/alert.js'></script>
   <script src="js/slidervalue.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/fontloader.js"></script>
+  <script src="js/fontloader.js"></script>
 
 </body>
 
