@@ -6,7 +6,7 @@ fetch(apiURL)
     .then((jsObject) => {
         //console.log(jsObject); //use this to check the console
         //weather overlay box
-        document.getElementById('current-temp').textContent = Math.round(jsObject.main.temp) + " °F";
+        document.getElementById('current-temp').innerHTML = Math.round(jsObject.main.temp) + " &#176;F";
         document.getElementById('windspeed').textContent = Math.round(jsObject.wind.speed);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         //Currently: description
@@ -17,7 +17,7 @@ fetch(apiURL)
         let wc = "N/A";
         if (t <= 50 && s >= 3.0) {
             let calc = (35.74 + (.6215 * t)) - (35.75 * (Math.pow(s, .16))) + (.4275 * (t * (Math.pow(s, .16))));
-            wc = Math.round(calc) + " °F";
+            wc = Math.round(calc) + " &#176;F";
         }
         document.getElementById("windchill").innerHTML = wc;
     });
@@ -55,7 +55,7 @@ fetch(forecastURL)
             forecastImg[i].setAttribute('alt', description);
 
             //forecast temp
-            forecastTemp[i].textContent = Math.round(data[i].main.temp) + " °F";
+            forecastTemp[i].innerHTML = Math.round(data[i].main.temp) + " &#176;F";
         }
 
     });

@@ -167,14 +167,15 @@ h2 {
   letter-spacing: .05rem;
   line-height: 2.5rem;
   color: #003366;
-  padding-top: 2.75rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: .25rem;
   padding-left: .6rem;
   text-align: center;
+  margin: 1rem;
 }
 
 /* --------Weather Summary Overlay Box------- */
-h3, h4, h5 {
+h3, h4 {
   font-family: 'fjalla one', sans-serif;
   font-size: 1rem;
   letter-spacing: .05rem;
@@ -183,6 +184,17 @@ h3, h4, h5 {
   padding-left: 0;
   text-align: center;
   margin: 1rem;
+}
+
+h5 {
+  font-family: 'fjalla one', sans-serif;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  line-height: 1.5rem;
+  color: #003366;
+  padding-left: 0;
+  text-align: left;
+  margin: 1rem 0 .25rem 0;
 }
 
 .pictureoverlay_box {
@@ -195,37 +207,40 @@ picture.picturecontainer {
   margin: 0 2%;
 }
 
+.weathersummary_box {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+  margin-top: -.19rem;
+  justify-content: center;
+  align-items: center;
+}
+
 main picture.picturecontainer img {
   width: 100%;
 }
 
-
 .overlaycontainer {
-  font-size: .65rem;
-  width: 175px;
-  height: 100px;
-  left: 1rem;
-  top: 1rem;
+  font-size: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 8px 8px 8px 8px 8px;
-  row-gap: .7rem;
-  column-gap: .8rem;
-  padding: .75rem 1rem 1.5rem 1rem;
-  align-content: center;
-  margin: 0 auto;
+  row-gap: 1.5rem;
+  column-gap: .5rem;
+  padding: .15rem 1rem 2.25rem 1rem;
 }
+
 #currdescription {
   text-transform: capitalize;
 }
 
 table {
-  background-color: rgb(153, 204, 204, .85);
-  margin: auto;
+  background-color: rgb(153, 204, 204, .65);
 }
 
-table.weathersummary_box {
-  margin-top: 1.25rem;
+.weathersummary_box h3 {
+  margin-top: 2.25rem;
+  text-align: center;
 }
 
 /* ------forecast------ */
@@ -234,7 +249,7 @@ table.weathersummary_box {
   text-align: right;
 }
 
-.forecast {
+.forecast, h4 {
   display: none;
 }
 
@@ -253,9 +268,11 @@ h4 {
 }
 
 .byline {
+  color: #003366;
   font-style: italic;
   font-size: .8rem;
   line-height: .5rem;
+  margin-top: 0;
 }
 
 main img {

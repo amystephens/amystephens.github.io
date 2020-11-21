@@ -38,6 +38,7 @@
   }
   
   h4 {
+    display: block;
     background-color: #99cccc;
     border: 5px solid #99cccc;
     width: 75%;
@@ -47,7 +48,6 @@
   }
 
   .forecastimg {
-    
     padding: 5px;
     margin: 0 auto;
   }
@@ -56,23 +56,36 @@
     max-width: 4rem;
   }
 
-  h2 {
-    line-height: 0;
-  }
+ 
 
   /* -------Weather Summary Overlay Box------- */
-  h3, h5 {
+  h3 {
     font-size: 1.25rem;
     text-align: left;
   }
 
-  table.weathersummary_box {
-    background-color: rgb(153, 204, 204, .85);
-    margin: auto;
-    position: absolute;
-    left: 2.25rem;
-    top: 1rem;
+  h5 {
+    font-size: 1.25rem;
+    text-align: left;
+    margin-top: 0;
   }
+
+  .weathersummary_box {
+    background-color: rgb(153, 204, 204, .85);
+    position: absolute;
+    left: 1.25rem;
+    top: 1.25rem;
+    width: 245px;
+    margin-top: 0;
+  }
+
+  .overlaycontainer {
+    width: 245px;
+    height: auto;
+    display: grid;
+    row-gap: 1.35rem;
+  }
+  /* ------- article ------- */
 
   .article {
     max-width: 100%;
