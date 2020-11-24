@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--This is my Fish Haven Town Page-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish Haven Town Page</title>
+  <meta name="description"
+    content="Weather Site Fish Haven Page for Amy Stephens' WDD 230 Frontend Dev class at BYU-Idaho - IdahoWeatherNow.com.">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+  <!-- HEADER HERE -->
+  <header>
+    <picture>
+      <img id="logo" src="images/logo.svg" alt="Idaho Weather Now logo.">
+    </picture>
+    <section class="headings">
+      <h1 id="idahoName">Idaho Weather Now</h1>
+      <div class="motto">A Fast and Up-to-Date Weather Source</div>
+    </section>
+  </header>
+
+
+
+  <!-- NAVIGATION HERE -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li><a href="fishhaven.html" class="active_onthispage">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT HERE -->
+  <main class="mainpreston">
+    <div class="townname_box">
+      <h2 class="cityname">Fish Haven, Idaho</h2>
+    </div>
+    <div class="pictureoverlay_box">
+      <picture class="picturecontainer">
+        <source media="(max-width: 350px)" srcset="images/hero350.jpg" >        
+        <source media="(max-width:650px)" srcset="images/hero650.jpg">
+        <source media="(max-width:950px)" srcset="images/hero950.jpg" >
+        <img class="landscapepic" src="images/hero1200.jpg" alt="Photograph by Adrian Korpal of a cloudy sky.">
+      </picture>
+      <table class="weathersummary_box">
+        <tr>
+          <td>
+            <h3>Weather Summary</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="overlaycontainer">
+              <div class="gridleft">Currently:</div>
+              <div class="gridright"><span id="currdescription"></span></div>
+              <div class="gridleft"> Temperature:</div>
+              <div class="gridright"><span id="current-temp"></span></div>
+              <div class="gridleft">Wind Chill:</div>
+              <div class="gridright"><span id="windchill"></span></div>
+              <div class="gridleft">Humidity:</div>
+              <div class="gridright"><span id="humidity"></span>%</div>
+              <div class="gridleft">Wind Speed:</div>
+              <div class="gridright"><span id="windspeed"></span> mph</div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <h4>Five Day Forecast</h4>
+    <div class="forecast">
+      <!-- <p>5 Day Forecast</p> -->
+      <section class="gridtop"><span id="forecastdayone"></span></section>
+      <section class="gridtop"><span id="forecastdaytwo"></span></section>
+      <section class="gridtop"><span id="forecastdaythree"></span></section>
+      <section class="gridtop"><span id="forecastdayfour"></span></section>
+      <section class="gridtop"><span id="forecastdayfive"></span></section>
+
+      <section class="gridmiddle"><img src="#" alt="" class="forecastimg"></section>
+      <section class="gridmiddle"><img src="#" alt="" class="forecastimg"></section>
+      <section class="gridmiddle"><img src="#" alt="" class="forecastimg"></section>
+      <section class="gridmiddle"><img src="#" alt="" class="forecastimg"></section>
+      <section class="gridmiddle"><img src="#" alt="" class="forecastimg"></section>
+
+      <section><span class="forecasttemp"></span></section>
+      <section><span class="forecasttemp"></span></section>
+      <section><span class="forecasttemp"></span></section>
+      <section><span class="forecasttemp"></span></section>
+      <section><span class="forecasttemp"></span></section>
+    </div>
+
+    <div class="events"></div>
+
+    <div class="article">
+      <picture>
+        <img class="hike" src="images/iceswimming350.jpg" alt="Photograph by Vidar Nordli Mathisen of a man swimming in icey water.">
+      </picture>
+      <h6>Bear Lake Monster Winterfest</h6>
+      <p class="byline">by Summer Wheatley</p>
+      <p>Fish Haven residents and people from all across the country are looking forward to the annual Bear Lake Monster Winterfest January 28-30, 2021.</p>
+      <p>On Thursday evening, the Monster Winterfest Social will include free family-friendly games for all ages at the Sunrise Resort and Event Center from 4-10pm. Events include a movie, trivia, karaoke, auction, hot chocolate and donuts. The Monster Outdoor Expo will also being going on at this time at the Sunrise Resort. Check out the vendors and pick up your own pet polar bear at the adoption center.</p>
+      <p>Friday morning the Monster 5K Run/Walk will kick off at at 10 am. Participants need to pick up their packets from 8:30-9:30 am. Athletes arrive in full costumes to hide their identities because only crazy people would want to run here in January.</p>
+      <p>Saturday at 11 am is the Monster Plunge. Join us (or sign up someone you don't like) to go jump in a lake. Once again, costumes are encouraged because, well, same reason as before you crazy people. This is event is sure to take your breath away and leave you shaking.</p>
+      <p>Saturday night from 6-10 pm will be the Monster After Party at the Sunrise Resort and Event Center. At 6 pm, an award ceremony will be held to honor any survivors from the Monster Winterfest competitions. Music and dancing will run from 7-10 pm. Enjoy fireworks at dusk - because apparently standing outside in freezing cold weather is fun for some people.</p>
+    </div>
+
+
+  </main>
+
+
+  <!-- FOOTER HERE -->
+  <footer>
+    <div class="mapcontact_box">
+      <picture>
+        <img class="map" src="images/map400.jpg" alt="map of southeastern Idaho">
+      </picture>
+      <div class="contact_box">
+        <div class="address">
+          <p>Address:</p>
+          <p>Idaho Weather Now</p>
+          <p>155 N 200 W</p>
+          <p>Preston, ID 83263</p>
+        </div>
+
+        <div class="phone">
+          <p>Call:</p>
+          <p>(208) 555-1030</p>
+          <p>Email:</p>
+          <p>info@IdahoWeatherNow.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot_box">
+      &copy; <span id="currentYear"></span> Idaho Weather Now | <a
+        href="https://amystephens.github.io/">Amy Stephens</a>
+      <div id="currentDate"></div>
+      <div class="wireframetext">
+        <a href="https://openweathermap.org">OpenWeatherMap.org</a>
+      </div>
+    </div>
+  </footer>
+  <script src='js/dates.js'></script>
+  <script src='js/scripts.js'></script>
+  <script src='js/alert.js'></script>
+  <script src="js/weatherapifish.js"></script>
+  <script src="js/cityeventsfish.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fontloader.js"></script>
+
+</body>
+
+</html>

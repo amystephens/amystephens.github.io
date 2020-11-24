@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--This is my Thanks Form Page-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storm Center Gracias</title>
+  <meta name="description"
+    content="Weather Site Thanks for Submitting Storm Form Page for Amy Stephens' WDD 230 Frontend Dev class at BYU-Idaho - IdahoWeatherNow.com.">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+  <!-- HEADER HERE -->
+  <header>
+    <picture>
+      <img id="logo" src="images/logo.svg" alt="Idaho Weather Now logo.">
+    </picture>
+    <section class="headings">
+      <h1 id="idahoName">Idaho Weather Now</h1>
+      <div class="motto">A Fast and Up-to-Date Weather Source</div>
+    </section>
+  </header>
+
+
+
+  <!-- NAVIGATION HERE -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="index-9.html">HOME</a></li>
+      <li><a href="preston-9.html">Preston</a></li>
+      <li><a href="stormcenter-9.html">Soda Springs</a></li>
+      <li><a href="stormcenter-9.html">Fish Haven</a></li>
+      <li><a href="stormcenter-9.html">Storm Center</a></li>
+      <li><a href="gallery-9.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT HERE -->
+  <main class="mainthanks">
+    <div class="thanksname_box">
+      <h2>Your Submission was Received!</h2>
+      <p class="thanks">Thank you for submitting a storm update. This information helps keep our community safe and updated on weather in our area.
+    </p>
+</div>
+      
+  </main>
+
+
+  <!-- FOOTER HERE -->
+  <footer>
+    <div class="mapcontact_box">
+      <picture>
+        <img class="map" src="images/map400.jpg" alt="map of southeastern Idaho">
+      </picture>
+      <div class="contact_box">
+        <div class="address">
+          <p>Address:</p>
+          <p>Idaho Weather Now</p>
+          <p>155 N 200 W</p>
+          <p>Preston, ID 83263</p>
+        </div>
+
+        <div class="phone">
+          <p>Call:</p>
+          <p>(208) 555-1030</p>
+          <p>Email:</p>
+          <p>info@IdahoWeatherNow.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot_box">
+      &copy; <span id="currentYear"></span> Idaho Weather Now | <a
+        href="https://amystephens.github.io/">Amy Stephens</a>
+      <div id="currentDate"></div>
+    </div>
+  </footer>
+  
+  <script src='js/dates.js'></script>
+  <script src='js/scripts.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fontloader.js"></script>
+
+</body>
+
+</html>

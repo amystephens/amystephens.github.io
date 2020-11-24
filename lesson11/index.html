@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--This is my Index Page-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idaho Weather Now</title>
+  <meta name="description"
+    content="Weather Site Home Page for Amy Stephens' WDD 230 Frontend Dev class at BYU-Idaho - IdahoWeatherNow.com.">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+  <!-- Message Alert -->
+  <div id="saturdayAlert">
+    <span class="saturday">Saturday = Preston Pancakes in the Park!</span>
+    <br>
+    <span class="saturday">9:00 am Saturday at the City Park.</span>
+  </div>
+
+
+  <!-- HEADER HERE -->
+  <header>
+    <picture>
+      <img id="logo" src="images/logo.svg" alt="Idaho Weather Now logo.">
+    </picture>
+    <section class="headings">
+      <h1 id="idahoName">Idaho Weather Now</h1>
+      <div class="motto">A Fast and Up-to-Date Weather Source</div>
+    </section>
+  </header>
+
+
+
+  <!-- NAVIGATION HERE -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="index-10.html" class="active_onthispage">HOME</a></li>
+      <li><a href="preston-10.html">Preston</a></li>
+      <li><a href="preston-10.html">Soda Springs</a></li>
+      <li><a href="preston-10.html">Fish Haven</a></li>
+      <li><a href="stormcenter-10.html">Storm Center</a></li>
+      <li><a href="gallery-10.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT HERE -->
+  <main class="mainpreston">
+    <div class="pictureoverlay_box">
+      <picture class="picturecontainer">
+        <source media="(max-width: 350px)" srcset="images/homehero350.jpg">
+        <source media="(max-width:650px)" srcset="images/homehero650.jpg">
+        <source media="(max-width:950px)" srcset="images/homehero950.jpg">
+        <img class="landscapepic" src="images/homehero1200.jpg"
+          alt="Photograph featuring a view of an Idaho landscape.">
+      </picture>
+    </div>
+
+    <div class="cards"></div>
+
+    <div class="article adventures clearfix">
+      <picture>
+        <img class="hike" src="images/lava350.jpg" alt="Photograph featuring a man in a hot spring.">
+      </picture>
+      <div class="adventuretext">
+        <h3>Local Outdoor Adventure Spotlights</h3>
+        <p class="byline">by Deb Bradshaw</p>
+        <p>Winter is here and it is already cold outside making it the perfect opportunity to take a short drive to
+          visit Lava Hot Springs and warm up. Their Geothermal Hot Springs range from 102˚ to 112˚ and are a fun way to
+          relax. If you are looking for a deal, Wednesdays are their Family Deal Day. Get a family pass for up to four
+          people for only $18.50. If you are wanting to take friends or family with you, group rates are also available.
+          Advance tickets can be purchased through their website to make it easy to plan ahead.</p>
+          <p>Lava Hot Springs boasts several different hot pools of varying sizes and temperatures. Courageous soakers will take the opportunity to make snow angels in the subzero temperatures while switching between pools. Nothing is more satisfying than having frozen nose hairs while the rest of your body feels a little on the hot side. If you are lucky enough to live in Idaho, you know that over half of the year is winter making the idea of warming up extra appealing.</p>
+      </div>
+
+    </div>
+
+
+  </main>
+
+
+  <!-- FOOTER HERE -->
+  <footer>
+    <div class="mapcontact_box">
+      <picture>
+        <img class="map" src="images/map400.jpg" alt="map of southeastern Idaho">
+      </picture>
+      <div class="contact_box">
+        <div class="address">
+          <p>Address:</p>
+          <p>Idaho Weather Now</p>
+          <p>155 N 200 W</p>
+          <p>Preston, ID 83263</p>
+        </div>
+
+        <div class="phone">
+          <p>Call:</p>
+          <p>(208) 555-1030</p>
+          <p>Email:</p>
+          <p>info@IdahoWeatherNow.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot_box">
+      &copy; <span id="currentYear"></span> Idaho Weather Now | <a
+        href="https://amystephens.github.io/">Amy Stephens</a>
+      <div id="currentDate"></div>
+      <div class="wireframetext">
+        <a href="home-wireframes.html">Wireframe Sketches</a>
+      </div>
+    </div>
+  </footer>
+  <script src='js/dates.js'></script>
+  <script src='js/scripts.js'></script>
+  <script src='js/alert.js'></script>
+  <script src="js/windchill2.js"></script>
+  <script type="text/javascript" src="js/town.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fontloader.js"></script>
+
+</body>
+
+</html>
