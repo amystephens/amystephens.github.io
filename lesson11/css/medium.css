@@ -56,7 +56,12 @@
     max-width: 4rem;
   }
 
- 
+  .events {
+    margin-bottom: 1.4rem;
+  }
+
+  margin: 0 auto 2rem auto;
+
 
   /* -------Weather Summary Overlay Box------- */
   h3 {
@@ -195,10 +200,14 @@ div.cardImg img {
   object-fit: cover;
 }
 
-div.cardText p,
-div.cardText h2 {
+div.cardText p {
   text-align: left;
   padding-left: 2rem;
+}
+
+div.cardText h2 {
+  text-align: left;
+  padding-left: 1rem;
 }
 
 div.cardText p.motto {

@@ -125,7 +125,7 @@ footer {
 
 .maingallery {
   background-color: #eeeeee;
-  margin-top: -26px;
+  margin-top: -16px;
 }
 
 .mainpreston {
@@ -507,7 +507,7 @@ div.cardText h2 {
   line-height: 2.5rem;
   padding-top: 0;
   padding-bottom: 0rem;
-  padding-left: 0rem;
+  padding-left: .5rem;
   margin-block-end: 0;
 }
 
