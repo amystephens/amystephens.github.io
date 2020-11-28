@@ -245,7 +245,8 @@ div.cards section:nth-child(2) .cardText {
   /* footer */
 
   div.mapcontact_box {
-    height: 310px;
+    height: 285px;
+    padding-left: .5rem;
     display: block;
   }
 
