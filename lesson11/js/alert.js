@@ -4,6 +4,4 @@ var dayofweek = day.getDay();
   if (dayofweek == 5) {
   var show = document.querySelector("#saturdayAlert");
   show.style.display = "block";
-//alert works
-  //alert(dayofweek);
 }

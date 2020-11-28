@@ -4,7 +4,6 @@ const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        //console.log(jsObject); //use this to check the console
         //weather overlay box
         document.getElementById('current-temp').innerHTML = Math.round(jsObject.main.temp) + " &#176;F";
         document.getElementById('windspeed').textContent = Math.round(jsObject.wind.speed);
@@ -27,7 +26,7 @@ fetch(forecastURL)
     .then((jsObject) => {
         //forecast box
         //forecast day of the week
-        
+
         var weekday = new Array(7);
         weekday[0] = "Sun";
         weekday[1] = "Mon";
@@ -36,7 +35,7 @@ fetch(forecastURL)
         weekday[4] = "Thu";
         weekday[5] = "Fri";
         weekday[6] = "Sat";
-        
+
 
         var gridTop = document.getElementsByClassName("gridtop");
         var forecastImg = document.getElementsByClassName("forecastimg");
@@ -45,7 +44,7 @@ fetch(forecastURL)
 
         for (var i = 0; i < data.length; i++) {
             var d = new Date(data[i].dt_txt);
-           
+
             gridTop[i].textContent = weekday[d.getDay()];
 
             //forecast icon and then description

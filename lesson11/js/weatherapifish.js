@@ -4,7 +4,6 @@ const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.038
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        //console.log(jsObject); //use this to check the console
         //weather overlay box
         document.getElementById('current-temp').innerHTML = Math.round(jsObject.main.temp) + " &#176;F";
         document.getElementById('windspeed').textContent = Math.round(jsObject.wind.speed);
