@@ -26,9 +26,9 @@
     display: block;
     background-color: #ffffff;
     border: 5px solid #99cccc;
-    font-size: .75rem;
+    font-size: 1rem;
     width: 75%;
-    height: 120px;
+    height: 132px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -96,7 +96,8 @@
   /* ------- article ------- */
 
   .article {
-    max-width: 100%;
+    max-width: 96%;
+    padding-left: 0;
   }
 
   .article p {
