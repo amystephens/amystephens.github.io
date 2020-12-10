@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCOOTS</title>
+  <meta name="description"
+    content="Scoots Rental Site Home Page for Amy Stephens' WDD 230 Frontend Dev class at BYU-Idaho.">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+  <!-- HEADER HERE -->
+  <header>
+    <section class="headings">
+      <a href="index.html">
+        <picture>
+          <img id="logo" src="images/logo.svg" alt="Scoots logo.">
+        </picture>
+      </a>
+      <h1>The best place for scooter, jeep and atv rentals in Cozumel.</h1>
+    </section>
+  </header>
+
+
+
+  <!-- NAVIGATION HERE -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT HERE -->
+  <main class="mainform">
+   
+    <div class="thanksname_box">
+        <h2>Your Rental Request was Received!</h2>
+        <p class="thanks">Thank you for submitting your rental request. We look forward to seeing you soon.
+      </p>
+  </div>
+      
+  </main>
+
+  <!-- FOOTER HERE -->
+  <footer>
+    <div class="foot_box">
+      <p>Scoots Rentals | 800-555-1234 | info@scoots.com</p>
+      <p>&copy; <span id="currentYear"></span> Scoots</p>
+      <p><a href="https://amystephens.github.io/">Amy
+        Stephens</a> | Attributions</p>
+      <div class="modified">
+        <span>Last Updated: </span>
+        <span id="lastModified"></span>
+      </div>
+      <a href="https://www.facebook.com/">
+        <picture>
+          <img class="socialmedia" src="images/facebook.svg" alt="Facebook logo.">
+        </picture>
+      </a>
+      <a href="https://www.linkedin.com/">
+        <picture>
+          <img class="socialmedia" src="images/linkedin.png" alt="Linked In logo.">
+        </picture>
+      </a>
+      <a href="https://www.twitter.com/">
+        <picture>
+          <img class="socialmedia" src="images/twitter.svg" alt="Twitter logo.">
+        </picture>
+      </a>
+    </div>
+  </footer>
+  <script src='js/dates.js'></script>
+  <script src='js/scripts.js'></script>
+  <script src='js/alert.js'></script>
+  <script src="js/weatherapi.js"></script>
+  <script src="js/town.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fontloader.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCOOTS</title>
+  <meta name="description"
+    content="Scoots Rental Site Home Page for Amy Stephens' WDD 230 Frontend Dev class at BYU-Idaho.">
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+  <!-- Message Alert -->
+  <div id="saturdayAlert">
+    <span class="saturday">Saturday = Preston Pancakes in the Park!</span>
+    <br>
+    <span class="saturday">9:00 am Saturday at the City Park.</span>
+  </div>
+
+
+  <!-- HEADER HERE -->
+  <header>
+    <section class="headings">
+      <a href="index.html">
+        <picture>
+          <img id="logo" src="images/logo.svg" alt="Idaho Weather Now logo.">
+        </picture>
+      </a>
+      <h1>The best place for scooter, jeep and atv rentals in Cozumel.</h1>
+    </section>
+  </header>
+
+
+
+  <!-- NAVIGATION HERE -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="#" class="active_onthispage">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT HERE -->
+  <main class="mainpreston">
+    <div class="pictureoverlay_box">
+      <picture class="picturecontainer">
+        <source media="(max-width: 350px)" srcset="images/scooterhero350.jpg">
+        <source media="(max-width:650px)" srcset="images/scooterhero650.jpg">
+        <source media="(max-width:950px)" srcset="images/scooterhero950.jpg">
+        <img class="landscapepic" src="images/scooterhero1200.jpg"
+          alt="Photograph featuring a view of an Idaho landscape.">
+      </picture>
+    </div>
+
+      <div class="gridone">
+      <div class="cta">
+        <h2>Scoots<br>Rentals</h2>
+        <p>A dependable rental service providing transportation for all your Cozumel adventures.</p>
+        <div class="ctabutton">Reserve Your Ride Now</div>
+      </div>
+      <div class="weather off">
+        <table class="weathersummary_box">
+          <tr>
+            <td>
+              <h3>Today's Weather in Cozumel</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="weathertable">
+                <div class="gridleft">Currently:</div>
+                <div class="gridright"><span id="currdescription"></span></div>
+                <div class="gridleft"> Temperature:</div>
+                <div class="gridright"><span id="current-temp"></span></div>
+                <div class="gridleft">Humidity:</div>
+                <div class="gridright"><span id="humidity"></span>%</div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="forecastscoot off">
+        <h4>Three Day Forecast</h4>
+        <div class="forecast">
+          <!-- <p>5 Day Forecast</p> -->
+          <div class="gridtop"><span id="forecastdayone"></span></div>
+          <div class="gridtop"><span id="forecastdaytwo"></span></div>
+          <div class="gridtop"><span id="forecastdaythree"></span></div>
+          
+
+          <div class="gridmiddle"><img src="#" alt="" class="forecastimg"></div>
+          <div class="gridmiddle"><img src="#" alt="" class="forecastimg"></div>
+          <div class="gridmiddle"><img src="#" alt="" class="forecastimg"></div>
+          
+
+          <div><span class="forecasttemp"></span></div>
+          <div><span class="forecasttemp"></span></div>
+          <div><span class="forecasttemp"></span></div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="gridtwo">
+      <div class="rentals">
+        <div class="rentalsone rentalspics"><img src="images/rentalhondametro350.jpg" alt="Photo of Honda Metro scooter">
+          <h2>Honda Metro</h2>
+          <p>$20</p>
+          <p>Maximum of 1 Passenger</p>
+          <div class="rentalbutton">Rent Now</div>
+        </div>
+        <div class="rentalstwo rentalspics"><img src="images/rentalhondadio350.jpg" alt="Photo of Honda Dio scooter">
+          <h2>Honda Dio</h2>
+          <p>$20</p>
+          <p>Maximum of 2 Passengers</p>
+          <div class="rentalbutton">Rent Now</div>
+        </div>
+        <div class="rentalsthree rentalspics"><img src="images/rentalhondapcx350.jpg" alt="Photo of Honda PCX scooter">
+          <h2>Honda PCX</h2>
+          <p>$20</p>
+          <p>Maximum of 2 Passengers</p>
+          <div class="rentalbutton">Rent Now</div>
+        </div>
+        <div class="rentalsfour rentalspics"><img src="images/rentalhondapioneer350.jpg" alt="Photo of Honda Pioneer ATV">
+          <h2>Honda Pioneer</h2>
+          <p>$20</p>
+          <p>Maximum of 2 Passengers</p>
+          <div class="rentalbutton">Rent Now</div>
+        </div>
+        <div class="rentalsfive rentalspics"><img src="images/rentaljeeptwo350.jpg" alt="Photo of a Jeep">
+          <h2>Jeep Two</h2>
+          <p>$20</p>
+          <p>Maximum of 2 Passengers</p>
+          <div class="rentalbutton">Rent Now</div>
+        </div>
+        <div class="rentalssix rentalspics"><img src="images/rentaljeepfourx350.jpg" alt="Photo of Honda Metro scooter">
+          <h2>Honda Metro</h2>
+          <p>$20</p>
+          <p>Maximum of 5 Passengers</p>
+          <div class="rentalbutton">Rent Now</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER HERE -->
+  <footer>
+    <div class="foot_box">
+      <p>Scoots Rentals | 800-555-1234 | info@scoots.com</p>
+      <p>&copy; <span id="currentYear"></span> Scoots</p>
+      <p><a href="https://amystephens.github.io/">Amy
+        Stephens</a> | Attributions</p>
+      <div class="modified">
+        <span>Last Updated: </span>
+        <span id="lastModified"></span>
+      </div>
+      <a href="https://www.facebook.com/">
+        <picture>
+          <img class="socialmedia" src="images/facebook.svg" alt="Facebook logo.">
+        </picture>
+      </a>
+      <a href="https://www.linkedin.com/">
+        <picture>
+          <img class="socialmedia" src="images/linkedin.png" alt="Linked In logo.">
+        </picture>
+      </a>
+      <a href="https://www.twitter.com/">
+        <picture>
+          <img class="socialmedia" src="images/twitter.svg" alt="Twitter logo.">
+        </picture>
+      </a>
+    </div>
+  </footer>
+  <script src='js/dates.js'></script>
+  <script src='js/scripts.js'></script>
+  <script src='js/alert.js'></script>
+  <script src="js/weatherapi.js"></script>
+  <script src="js/town.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fontloader.js"></script>
+
+</body>
+
+</html>

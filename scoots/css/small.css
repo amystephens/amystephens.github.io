@@ -1,0 +1,859 @@
+/* small css for Lesson 9 */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* phone or baseline views **************************/
+/* grouping them together makes the responsivness work */
+
+/*----------- BODY --------------*/
+body {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #1f293f;
+}
+
+h1 {
+  letter-spacing: .02rem;
+  color: #ffffff;
+  font-size: .6rem;
+  line-height: 1rem;
+  margin: -.15rem 0 1.75rem 0;
+}
+
+h3, h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  line-height: 0;
+  color: #1f293f;
+  padding-left: 0;
+  text-align: center;
+  margin: 1rem;
+}
+
+/*----------- HEADER --------------*/
+header {
+  background-color: #1f293f;
+  padding: 5px 0;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+header img {
+  max-width: 250px;
+  height: auto;
+  padding-top: 1rem;
+  margin-top: .5rem;
+}
+
+/* grouping them together makes the responsivness work */
+header,
+nav {
+  margin: 0 auto;
+}
+
+#saturdayAlert {
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #ECD078;
+  padding: 1rem 0;
+  text-align: center;
+  display: none;
+}
+
+span.saturday {
+  margin: 0 1rem;
+}
+
+/*----------- NAVIGATION --------------*/
+nav button {
+  margin: .2rem 2% .5rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #eeeeee;
+}
+
+nav {
+  background-color: #497683;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #767c7f;
+  text-align: center;
+}
+
+nav ul li a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  text-decoration: none;
+  /* gets rid of underline */
+  color: #eeeeee;
+  line-height: 2rem;
+  display: block;
+  /* this makes the whole block clickable */
+}
+
+nav ul li a:hover {
+  background-color: #7da39e;
+}
+
+nav ul li a:active {
+  color: #497683;
+}
+
+.active_onthispage {
+  background-color: #497683;
+  color: #eeeeee;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/*----------- MAIN --------------*/
+
+main,
+footer {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+/*----------- GRID ONE SETUP --------------*/
+
+.gridone {
+  
+  border: solid 2rem #571c2f;
+  background-color: #571c2f;
+  margin: 2%;
+  max-width: 96%;
+
+}
+
+.off {
+  display: none;
+}
+
+/*----------- CTA --------------*/
+
+.cta {
+  
+  background-color: #571c2f;
+  margin: 0;
+  max-width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.cta h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2.75rem;
+  letter-spacing: .5rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0;
+}
+
+.cta p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.35rem;
+  text-align: center;
+  padding: 0 2rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.ctabutton {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+  color: #571c2f;
+  padding: 1rem;
+  max-width: 20rem;
+  border-radius: .2rem;
+  margin: 1rem auto 0 auto;
+
+}
+
+/*----------- WEATHER --------------*/
+
+.weather {
+ 
+  background-color: #eeeeee;
+
+
+}
+
+.weathersummary_box {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+}
+
+.weather_title_box {
+  background-color: #7da39e;
+  margin: 0;
+}
+
+.weathersummary_box h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  text-align: center;
+  color: #487683;
+}
+
+.weathertable {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8px 8px 8px;
+  row-gap: 1rem;
+  column-gap: .5rem;
+  margin-bottom: 1.25rem;
+}
+
+#currdescription {
+  text-transform: capitalize;
+}
+.gridleft {
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 0;
+  color: #1f293f;
+  padding-left: 0;
+  margin: 0;
+}
+.gridright {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 0;
+  color: #1f293f;
+  padding-left: 0;
+  margin: 0;
+}
+
+/*----------- FORECAST --------------*/
+
+
+.forecastscoot {
+  background-color: #eeeeee;
+  padding: 0 1rem 1.5rem 1rem;
+}
+
+.forecastscoot h4 {
+  padding: 1rem 0 .5rem 0;
+  color: #eeeeee;
+  background-color: #7da39e;
+  display: block;
+  background-color: #487683;
+  border: 5px solid #487683;
+  width: 95%;
+  height: 20px;
+  padding: .75rem 1rem .5rem 1rem;
+  margin: 0 auto;
+}
+
+.forecast {
+  display: block;
+  background-color: #ffffff;
+  border: 5px solid #487683;
+  font-size: 1rem;
+  width: 95%;
+  height: 132px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: .75rem 1rem .5rem 1rem;
+  margin: 0 auto 0rem auto;
+  text-align: center;
+}
+
+.forecastimg {
+  padding: 5px;
+  margin: 0 auto;
+}
+
+/*----------- GRID SETUP --------------*/
+
+.gridtwo {
+  margin: 2%;
+  max-width: 96%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------- RENTALS --------------*/
+
+.rentals {
+  background-color: #eeeeee;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+
+.rentalbutton {
+  background-color: #571c2f;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem;
+  max-width: 12rem;
+  border-radius: .2rem;
+  margin: 2rem auto;
+}
+
+.rentalspics {
+  border: solid 1rem #ffffff;
+  background-color: #7da39e;
+  margin: 1rem 0;
+}
+
+.rentals img {
+  background-color: #ffffff;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  max-width: 100%; 
+}
+
+.rentals h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #eeeeee;
+}
+
+.rentals p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+
+
+/*----------- TESTIMONIALS --------------*/
+
+.maingallery {
+  background-color: #eeeeee;
+  margin-top: -16px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #1f293f;
+  font-size: .85rem;
+  line-height: 1.2rem;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* turned off was getting the motto
+.motto {
+  letter-spacing: .02rem;
+  color: #000000;
+  margin-left: 17px;
+  font-size: .9rem;
+}
+*/
+
+/* --------Weather Summary Overlay Box------- */
+
+
+/* h6 {
+  font-family: 'fjalla one', sans-serif;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  line-height: 1.5rem;
+  color: #003366;
+  padding-left: 0;
+  text-align: left;
+  margin: 1rem 0 .25rem 0;
+} */
+
+.pictureoverlay_box {
+  position: relative;
+}
+
+picture.picturecontainer {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main picture.picturecontainer img {
+  width: 100%;
+}
+
+/* ------events------ */
+
+.events {
+  background-color: #003366;
+  width: 96%;
+  margin: 0 2%;
+  height: auto;
+  padding: .75rem 1rem 1.5rem 1rem;
+  margin: 0 auto 2rem auto;
+}
+
+.events h5 {
+  color: #ECD078;
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: 'fjalla one', sans-serif;
+  letter-spacing: .05rem;
+  line-height: 1.5rem;
+  padding-left: 0;
+  margin: 1rem 0 .25rem 0;
+}
+
+.events li {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  list-style-type: none;
+  line-height: 1.75;
+}
+
+.events ul {
+padding: 0;
+margin: 0.5rem;
+}
+
+/* ------articles------ */
+
+.article {
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 15px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.byline {
+  color: #003366;
+  font-style: italic;
+  font-size: .8rem;
+  line-height: .5rem;
+  margin-top: 0;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ------gallery page css------ */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1.75rem 3rem 1.75rem;
+}
+
+div p.caption {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+div.photo {
+  background-color: #ffffff;
+}
+
+div picture img[data-src] {
+  filter: blur(0.1em);
+}
+
+div.gallery picture img {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1rem;
+  transition: filter 0.5s;
+}
+
+div p.caption {
+  padding: 0 1.75rem 0 1rem;
+}
+
+/* ------- reservations form -------- */
+
+.flexformone {
+  display: flex;
+  flex-direction: column;
+}
+
+div.formname_box h2 {
+  font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #1f293f;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.75rem;
+    letter-spacing: .5rem;
+    padding: 2rem 1rem 0 1rem;
+    margin: 0;
+
+}
+
+form {
+  padding: 0 2rem;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 3px solid #487683;
+  border-radius: .8rem;
+  padding: 1rem 1rem;
+  background-color: #487683;
+}
+
+.rentalagreement {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  margin-top: -.5rem;
+  color: #1f293f;
+}
+
+
+form legend {
+  color: #1f293f;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  padding: 0 .75rem 2.5rem 0;
+  margin-left: -1rem;
+}
+
+form label.toplabel {
+  display: block;
+  padding-top: 1rem;
+  color: #fff;
+  font-size: .8rem;
+  line-height: 1.25rem;
+}
+
+form div.toplabel {
+  display: block;
+  padding-top: 1rem;
+  color: #fff;
+  font-size: .8rem;
+  line-height: 1.25rem;
+}
+
+form label.tiptoplabel,
+form div.tiptoplabel {
+  padding-top: 0rem;
+  margin-top: -1.5rem;
+}
+
+form label.toplabel input,
+form label.toplabel select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: .8rem;
+  border: solid 2px #eeeeee;
+  border-radius: .1rem;
+  padding: .75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: #eeeeee;
+  margin-bottom: .5rem;
+}
+
+input.rangeinput {
+  display: block;
+  margin-top: .5rem;
+  margin-bottom: .45rem;
+}
+
+form label.radio {
+  display: block;
+  font-size: .8rem;
+  padding: .5rem 0;
+  color: #fff;
+}
+
+textarea.commentbox {
+  margin-top: .35rem;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #571c2f;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border-radius: .1rem;
+  padding: .75rem 1.5rem;
+  margin: .1rem 0 2.2rem 0;
+  width: 100%;
+  max-width: 20rem;
+  border: 3px solid #571c2f;
+  border-radius: .8rem;
+}
+
+form input.submitBtn:hover {
+  font-size: 1.25rem;
+}
+
+form label.toplabel input:required, form label.toplabel select:required {
+  border: solid 2px #571c2f;
+  color: #571c2f;
+}
+
+form label.toplabel input:required:valid, form label.toplabel select:required:valid {
+  border: solid 2px #eeeeee;
+  color: #1f293f;
+}
+
+/* ------------------thanks------------------ */
+
+.thanksname_box {
+  padding: 2rem 0;
+}
+
+.thanksname_box h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #1f293f;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2.75rem;
+  letter-spacing: .5rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0;
+}
+
+p.thanks {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 2rem 2.5rem 2rem;
+  color: #1f293f;
+}
+
+/* --------------town index cards-------------- */
+
+div.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 ;
+  padding: .75rem;
+}
+
+div.cardText p {
+  text-align: center;
+  line-height: .5rem;
+}
+
+div.cardText h2 {
+  letter-spacing: .05rem;
+  line-height: 2.5rem;
+  padding-top: 0;
+  padding-bottom: 0rem;
+  padding-left: .5rem;
+  margin-block-end: 0;
+}
+
+div.cardText p.motto {
+  font-style: italic;
+  line-height: 1.25rem;
+  margin-top: .2rem;
+  margin-bottom: 1.5rem;
+  padding-right: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+div.cardImg img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+main div.cards section {
+  background-color: #ffffff;
+  border: solid 1.5rem #ECD078;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  min-height: 260px;
+  height: auto;
+}
+
+/* ---------------adventure article--------------- */
+
+.adventures {
+  background-color: #eeeeee;
+  padding: 1.5rem;
+  width: 94%;
+}
+
+div.adventures img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+div.adventures h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: left;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+/* ------------------wireframe pngs------------------ */
+
+.wireframe_box {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+
+  justify-content: center;
+}
+
+.wireframepic {
+  padding: 0 2rem;
+}
+
+/* ------------------footer------------------ */
+
+div.mapcontact_box {
+  background-color: #99cccc;
+  max-width: 100%;
+  height: 110px;
+  margin: 0 auto;
+  padding-top: .5rem;
+}
+
+.map {
+  max-width: 350px;
+  padding: 1rem 1rem 0rem 1rem;
+  display: none;
+  border-style: none;
+}
+
+.contact_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.contact_box p {
+  font-size: .8rem;
+  line-height: .5rem;
+  padding: 0 1rem;
+}
+
+.foot_box {
+  background-color: #003366;
+  color: #ffffff;
+  font-size: .7rem;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 1150px;
+}
+
+footer {
+  max-width: 1150px;
+  margin: auto;
+}
+
+footer a:link,
+footer a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffcc66;
+}
+
+footer p, .modified {
+  color: #fff;
+  font-size: .85rem;
+  line-height: .75rem;
+}
+
+
+
+.socialmedia {
+  width: 25px;
+  margin: 1rem .5rem;
+}

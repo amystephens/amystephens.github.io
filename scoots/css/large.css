@@ -1,0 +1,118 @@
+/* large css for Lesson 9 */
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 72em) {
+
+  nav ul {
+    display: flex;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+    /* 1 1 100px (use 100% the space avaiable and keep them all the same) */
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+
+  .active_onthispage {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* --------------gallery page css-------------- */
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  div.photo:hover {
+    box-shadow: 0 0 25px #333;
+  }
+
+  div.photo {
+    border: #003366;
+    border-style: none;
+  }
+
+  /* --------------index town cards-------------- */
+
+  div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: .75rem;
+  }
+
+  div.cardText p {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .motto {
+    margin-left: 17px;
+  }
+
+  div.cardText h2 {
+    text-align: center;
+    letter-spacing: .05rem;
+    line-height: 2.5rem;
+    padding-top: 0;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    margin-block-end: 0;
+  }
+
+  main div.cards section {
+    display: block;
+    background-color: #ffffff;
+    border: solid 1.5rem #ECD078;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    min-height: 490px;
+    height: auto;
+    position: relative;
+  }
+
+  div.cardImg img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    height: auto;  
+  }
+
+/* -------------- reservations form -------------- */
+
+  .flexformone {
+    display: flex;
+    flex-direction: row;
+    max-width: 50rem;
+    margin: auto;
+  }
+
+
+
+  .formone:nth-child(1) {
+    margin-right: 1rem;
+  
+  }
+
+}

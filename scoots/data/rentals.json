@@ -1,0 +1,64 @@
+{
+    "rentals": [
+      {
+        "name": "Honda Metropolitan (49cc)",
+        "type": "Honda Motor Scooter",
+        "photo": "rentalhondametro350.jpg",
+        "passengers": 1,
+        "half": 20,
+        "full": 30,
+        "walkinhalf": 25,
+        "walkinfull": 35
+      },
+      {
+        "name": "Honda Dio (110cc)",
+        "type": "Honda Motor Scooter",
+        "photo": "rentalhondadio350.jpg",
+        "passengers": 2,
+        "half": 30,
+        "full": 40,
+        "walkinhalf": 35,
+        "walkinfull": 45
+      },
+      {
+        "name": "Honda PCX150 (149cc)",
+        "type": "Honda Motor Scooter",
+        "photo": "rentalhondapcx350.jpg",
+        "passengers": 2,
+        "half": 40,
+        "full": 50,
+        "walkinhalf": 45,
+        "walkinfull": 55
+      },
+      {
+        "name": "Honda Pioneer 1000",
+        "type": "ATV Side-by-Side",
+        "photo": "rentalhondapioneer350.jpg",
+        "passengers": 4,
+        "half": 50,
+        "full": 70,
+        "walkinhalf": 60,
+        "walkinfull": 80
+      },
+      {
+        "name": "Jeep Wrangler - 4 door with AC",
+        "type": "Jeeps",
+        "photo": "rentaljeepfour350.jpg",
+        "passengers": 5,
+        "half": 70,
+        "full": 100,
+        "walkinhalf": 85,
+        "walkinfull": 125
+      },
+      {
+        "name": "Jeep Wrangler - 2 door",
+        "type": "Jeeps",
+        "photo": "rentaljeeptwo350.jpg",
+        "passengers": 4,
+        "half": 60,
+        "full": 85,
+        "walkinhalf": 70,
+        "walkinfull": 90
+      }
+    ]
+  }

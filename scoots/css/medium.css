@@ -1,0 +1,337 @@
+/* medium css for Lesson 9 */
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 36rem) {
+  /* Flex Design for Navigation */
+
+  nav ul {
+    display: flex;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+    /* 1 1 100px (use 100% the space avaiable and keep them all the same) */
+  }
+
+  nav ul li a {
+    letter-spacing: .15rem;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: flex;
+  }
+
+  .active_onthispage {
+    padding: 0 1rem;
+    margin: 0 1rem;
+  }
+
+  header img {
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 1rem;
+    margin: .25rem 0 2rem 0;
+  }
+
+  .picturesummarygroup {
+    max-width: 100%;
+  }
+
+  
+
+  #icon1 img {
+    max-width: 4rem;
+  }
+
+  .events {
+    margin-bottom: 1.4rem;
+  }
+
+  /*----------- RENTALS --------------*/
+
+.rentals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: .5rem;
+  background-color: #eeeeee;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+
+.rentalbutton {
+  background-color: #571c2f;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem;
+  max-width: 12rem;
+  border-radius: .2rem;
+  margin: auto;
+}
+
+.rentalspics {
+  border: solid 1rem #7da39e;
+  background-color: #7da39e;
+  margin: 0 auto;
+  min-width: 250px;
+  
+}
+
+.rentals h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #eeeeee;
+}
+
+.rentals p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+
+}
+
+
+
+  /* -------Weather Summary Overlay Box------- */
+  
+  h3 {
+    text-align: left;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    padding-top: 1rem;
+  }
+
+  h6 {
+    font-size: 1.25rem;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  /*.weathersummary_box {
+    background-color: rgb(153, 204, 204, .85);
+    
+    left: 1.25rem;
+    top: 1.25rem;
+    width: 250px;
+    margin-top: 0;
+  } 
+
+  .overlaycontainer {
+    width: 250px;
+    height: auto;
+    display: grid;
+    row-gap: 1.35rem;
+  } */
+
+  /* ------- article ------- */
+
+  .article {
+    max-width: 96%;
+    padding-left: 0;
+  }
+
+  .article p {
+    font-size: 1rem;
+  }
+
+  .article h3 {
+    font-size: 1.5rem;
+  }
+
+  .byline {
+    line-height: 1.25rem;
+  }
+
+  img.hike {
+    max-width: 350px;
+    float: left;
+    margin: 0 1rem 1rem 0;
+  }
+
+  /* --------------gallery page css-------------- */
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /* -------reservations form-------- */
+
+  form fieldset {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  .agreement {
+      margin-top: 4.25rem;
+  }
+
+  form label.toplabel {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  form div.toplabel {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  form label.tiptoplabel,
+  form div.tiptoplabel {
+    margin-top: -1.75rem;
+  }
+
+  form label.toplabel input,
+  form label.toplabel select {
+    font-size: 1rem;
+    padding: .4rem;
+  }
+
+  form label.range {
+    font-size: 1rem;
+  }
+
+  form label.radio {
+    font-size: 1rem;
+    padding: .25rem;
+  }
+
+  form input.submitBtn {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    margin: .1rem auto 2.2rem auto;
+  }
+
+/* --------------index town cards-------------- */
+
+div.cards {
+  display: block;
+  grid-template-rows: 1fr;
+}
+
+main div.cards section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 1rem;
+  max-width: 750px;
+  width: auto;
+  min-height: auto;
+}
+
+div.cardImg img {
+  padding-top: 0;
+  float: right;
+  max-width: 570px;
+  min-height: 200px;
+  object-fit: cover;
+}
+
+div.cardText p {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+div.cardText h2 {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+div.cardText p.motto {
+  font-size: 1rem;
+  margin-left: 0;
+}
+
+div.cards section:nth-child(2) img {
+  order: 1;
+  float: left;
+}
+
+div.cards section:nth-child(2) .cardText {
+  order: 2;
+}
+
+  /* ------------adventure article------------ */
+
+  div.adventures {
+    display: block;
+  }
+
+  div.adventures img {
+    float: right;
+    padding-left: 1rem;
+    width: 350px;
+  }
+
+  div.adventuretext {
+    padding-left: 1.25rem;
+  }
+
+  div.adventuretext h3 {
+    margin-top: -1.3rem;
+  }
+
+  .adventures {
+    width: 96%;
+  }
+
+  /* footer */
+
+  div.mapcontact_box {
+    height: 285px;
+    padding-left: .5rem;
+    display: block;
+  }
+
+  .contact_box p {
+    font-size: 1rem;
+  }
+
+  .contact_box {
+    display: block;
+    padding-top: .55rem;
+  }
+
+  .address,
+  .phone {
+    margin: 2rem 0 3rem 0;
+  }
+
+  img.map {
+    max-width: 350px;
+    padding: 1rem 1rem 1rem 1rem;
+    display: block;
+    float: left;
+  }
+
+  footer {
+    font-size: .8rem;
+  }
+
+}
+
+@media only screen and (min-width: 44rem) {
+  nav ul li a {
+    letter-spacing: .25rem;
+  }
+
+}
