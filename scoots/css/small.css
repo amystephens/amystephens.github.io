@@ -248,7 +248,7 @@ main {
   text-transform: uppercase;
   margin: 1rem 0;
   text-align: center;
-  color: #487683;
+  color: #497683;
 }
 
 .weathertable {
@@ -297,8 +297,8 @@ main {
   color: #eeeeee;
   background-color: #7da39e;
   display: block;
-  background-color: #487683;
-  border: 5px solid #487683;
+  background-color: #497683;
+  border: 5px solid #497683;
   width: 95%;
   height: 20px;
   padding: .75rem 1rem .5rem 1rem;
@@ -308,7 +308,7 @@ main {
 .forecast {
   display: block;
   background-color: #ffffff;
-  border: 5px solid #487683;
+  border: 5px solid #497683;
   font-size: 1rem;
   width: 95%;
   height: 132px;
@@ -568,10 +568,10 @@ form {
 
 form fieldset {
   margin: 2rem 0;
-  border: 3px solid #487683;
+  border: 3px solid #497683;
   border-radius: .8rem;
   padding: 1rem 1rem;
-  background-color: #487683;
+  background-color: #497683;
 }
 
 .rentalagreement {
@@ -700,57 +700,43 @@ p.thanks {
   color: #1f293f;
 }
 
-/* --------------town index cards-------------- */
+/* ------- rentals JSON and tables ------- */
 
-div.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: .5rem;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 0 ;
-  padding: .75rem;
+table.rentalsjson {
+  border: solid 2rem #7da39e;
+  background-color: #fff;
+  margin: 2%;
+  max-width: 96%;
+  border-collapse: collapse;
 }
 
-div.cardText p {
-  text-align: center;
-  line-height: .5rem;
+table.rentalsjson th, table.rentalsjson td {
+  border: solid .1rem #497683;
+  padding: 1rem;
 }
 
-div.cardText h2 {
-  letter-spacing: .05rem;
-  line-height: 2.5rem;
-  padding-top: 0;
-  padding-bottom: 0rem;
-  padding-left: .5rem;
-  margin-block-end: 0;
+table th {
+  font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #497683;
+    text-align: center;
+    line-height: 1rem;
+    padding: .5rem;
+    margin: 0;
+
 }
 
-div.cardText p.motto {
-  font-style: italic;
-  line-height: 1.25rem;
-  margin-top: .2rem;
-  margin-bottom: 1.5rem;
-  padding-right: .5rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-}
+table td {
+  font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #497683;
+    text-align: left;
+    line-height: 1rem;
+    padding: .5rem;
+    margin: 0;
 
-div.cardImg img {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 1rem;
-}
-
-main div.cards section {
-  background-color: #ffffff;
-  border: solid 1.5rem #ECD078;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 350px;
-  min-height: 260px;
-  height: auto;
 }
 
 /* ---------------adventure article--------------- */

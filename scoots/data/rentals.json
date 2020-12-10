@@ -2,7 +2,7 @@
     "rentals": [
       {
         "name": "Honda Metropolitan (49cc)",
-        "type": "Honda Motor Scooter",
+        "type": "Motor Scooter",
         "photo": "rentalhondametro350.jpg",
         "passengers": 1,
         "half": 20,
@@ -12,7 +12,7 @@
       },
       {
         "name": "Honda Dio (110cc)",
-        "type": "Honda Motor Scooter",
+        "type": "Motor Scooter",
         "photo": "rentalhondadio350.jpg",
         "passengers": 2,
         "half": 30,
@@ -22,7 +22,7 @@
       },
       {
         "name": "Honda PCX150 (149cc)",
-        "type": "Honda Motor Scooter",
+        "type": "Motor Scooter",
         "photo": "rentalhondapcx350.jpg",
         "passengers": 2,
         "half": 40,
@@ -41,8 +41,8 @@
         "walkinfull": 80
       },
       {
-        "name": "Jeep Wrangler - 4 door with AC",
-        "type": "Jeeps",
+        "name": "Wrangler - 4 door with AC",
+        "type": "Jeep",
         "photo": "rentaljeepfour350.jpg",
         "passengers": 5,
         "half": 70,
@@ -51,8 +51,8 @@
         "walkinfull": 125
       },
       {
-        "name": "Jeep Wrangler - 2 door",
-        "type": "Jeeps",
+        "name": "Wrangler - 2 door",
+        "type": "Jeep",
         "photo": "rentaljeeptwo350.jpg",
         "passengers": 4,
         "half": 60,

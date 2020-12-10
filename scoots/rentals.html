@@ -48,66 +48,32 @@
 
   <!-- CONTENT HERE -->
   <main>
-    <div class="pictureoverlay_box">
-      <picture class="picturecontainer">
-        <source media="(max-width: 350px)" srcset="images/scooterhero350.jpg">
-        <source media="(max-width:650px)" srcset="images/scooterhero650.jpg">
-        <source media="(max-width:950px)" srcset="images/scooterhero950.jpg">
-        <img class="landscapepic" src="images/scooterhero1200.jpg"
-          alt="Photograph featuring a view of an Idaho landscape.">
-      </picture>
-    </div>
-
-    <h1>Table Build Activty</h1>    
-    <table>
+    <div class="formname_box">
+      <h2>SCOOTS Rental Prices</h2>
+    </div>   
+    <table class="rentalsjson">
       <thead>
         <tr>
-          <th colspan="3">ACME Wildwest</th>
+          <th colspan="4" class="whitetitletext"></th>
+          <th colspan="2" class="whitetitletext">Online Reservation Prices</th>
+          <th colspan="2" class="whitetitletext">Walk-In Prices</th>
         </tr>
+          <tr>
+            <th colspan="3" class="whitetitletext">Rental Information</th>
+            <th class="whitetitletext">Maximum Passengers</th>
+            <th class="whitetitletext">Half Day (3 Hours)</th>
+            <th class="whitetitletext">Full Day (24 Hours)</th>
+            <th class="whitetitletext">Half Day (3 Hours)</th>
+            <th class="whitetitletext">Half Day (24 Hours)</th>
+          </tr>
       </thead>
-      <tbody>
-          <tr>
-            <th class="whitetitletext">Period</th>
-            <th class="whitetitletext">Sales</th>
-            <th class="whitetitletext">Sales Goal</th>
-          </tr>
-          <tr>
-            <td>August</td>
-            <td>$3,590</td>
-            <td>$4,000</td>
-          </tr>
-          <tr>
-            <td>September</td>
-            <td>$4,420</td>
-            <td>$5,000</td>
-          </tr>
-          <tr>
-            <td>October</td>
-            <td>$4,870</td>
-            <td>$5,000</td>
-          </tr>
-          <tr>
-            <td>November</td>
-            <td>$8,610</td>
-            <td class="whitetitletext">$7,500</td>
-          </tr>
-          <tr>
-            <td>Black Friday</td>
-            <td colspan="2">$3,200</td>
-          </tr>
-          <tr>
-            <td>December</td>
-            <td>$6,820</td>
-            <td>$7,500</td>
-          </tr>
-      </tbody>
+      <tbody class="cards"></tbody>
       <tfoot>
         <tr>
-          <td colspan="3">Compiled 11.02.2020 by aStephens</td>
+          <td colspan="8">*Photos are a representation of rentals. Colors and conditions will vary. All prices are shown in US dollars.</td>
         </tr>
       </tfoot>
     </table>
-
   </main>
 
   <!-- FOOTER HERE -->
@@ -140,9 +106,8 @@
   </footer>
   <script src='js/dates.js'></script>
   <script src='js/scripts.js'></script>
-  <script src='js/alert.js'></script>
   <script src="js/weatherapi.js"></script>
-  <script src="js/town.js"></script>
+  <script src="js/rentals.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/fontloader.js"></script>
 
