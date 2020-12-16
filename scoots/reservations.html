@@ -53,16 +53,19 @@
     </div>
     <form method="GET" action="thanks.html">
       <div class="flexformone">
-      <fieldset class="formone">
+        <fieldset class="formone">
           <legend>Your Information</legend>
-          
-          <label class="toplabel tiptoplabel">Full Name* <input type="text" name="name"  minlength="5" pattern="[a-zA-Z ]+" required></label>
-          
-          <label class="toplabel">Email <input type="email" name="email" placeholder="yourname@gmail.com" required></label>
+
+          <label class="toplabel tiptoplabel">Full Name* <input type="text" name="name" minlength="5"
+              pattern="[a-zA-Z ]+" required></label>
+
+          <label class="toplabel">Email <input type="email" name="email" placeholder="yourname@gmail.com"
+              required></label>
 
           <label class="toplabel">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
 
-          <label class="toplabel">Address* <input type="text" name="address-line1" placeholder="Address" required></label>
+          <label class="toplabel">Address* <input type="text" name="address-line1" placeholder="Address"
+              required></label>
 
           <label class="toplabel">Address* <input type="text" name="address-line2" placeholder="Address"></label>
 
@@ -72,77 +75,78 @@
 
           <label class="toplabel">Zipcode* <input type="number" name="zip" placeholder="01234" required></label>
 
-          <label class="toplabel">Country* <input type="text" name="country-name" placeholder="Country" required></label>
-          
-      </fieldset>
+          <label class="toplabel">Country* <input type="text" name="country-name" placeholder="Country"
+              required></label>
 
-      <fieldset class="formone">
+        </fieldset>
+
+        <fieldset class="formone">
           <legend>Rental Information</legend>
 
           <label class="toplabel tiptoplabel">Rental Pick Up Date<input type="date" name="pickupDate" required></label>
 
           <label class="toplabel">Choose a Pick Up Location <select name="region" required>
-            <option value="" selected disabled>&#9662; Rental Locations</option>
-            <option value="centrolocationpick">Centro Location (near the airport and ferry dock)</option>
-            <option value="cruiseshiplocationpick">Puerta Maya Location (near the cruise ship terminal)</option>
-            <option value="specialpick">Special Accomomdations Needed</option>
-        </select>
-        </label>
+              <option value="" selected disabled>&#9662; Rental Locations</option>
+              <option value="centrolocationpick">Centro Location (near the airport and ferry dock)</option>
+              <option value="cruiseshiplocationpick">Puerta Maya Location (near the cruise ship terminal)</option>
+              <option value="specialpick">Special Accomomdations Needed</option>
+            </select>
+          </label>
 
           <label class="toplabel">Rental Return Date<input type="date" name="returnDate" required></label>
 
           <label class="toplabel">Choose a Drop Off Location <select name="region" required>
-            <option value="" selected disabled>&#9662; Rental Locations</option>
-            <option value="centrolocationdrop">Centro Location (near the airport and ferry dock)</option>
-            <option value="cruiseshiplocationdrop">Puerta Maya Location (near the cruise ship terminal)</option>
-            <option value="specialdrop">Special Accomomdations Needed</option>
-        </select>
-        </select>
-        </label>
-
-        <label class="toplabel">Select the Type of Rental <select name="region" required>
-            <option value="" selected disabled>&#9662; Rental Type</option>
-            <option value="honda dio scooter">Honda Dio Scooter</option>
-            <option value="honda metro scooter">Honda Metro Scooter</option>
-            <option value="honda pcx150 scooter">Honda PCX150 Scooter</option>
-            <option value="honda pioneer atv">Honda Pioneer ATV</option>
-            <option value="jeep wrangler 2 door">Jeep Wrangler - 2 Door</option>
-            <option value="jeep wrangler 4 door">Jeep Wrangler - 4 Door with A/C</option>
-        </select>
-        </label>      
-        
-        <label class="toplabel">Select the Quantity of Rentals Needed<select name="region" required>
-          <option value="" selected disabled>&#9662; Quantity</option>
-          <option value="onerental">1</option>
-          <option value="tworentals">2</option>
-          <option value="threerentals">3</option>
-          <option value="fourrentals">4</option>
-          <option value="fiverentals">5</option>
-          <option value="sixrentals">6</option>
-      </select>
-      </label> 
-        
-      </fieldset>
-    </div>
-
-      <fieldset>
-          <legend>Additional Information</legend>
-          <div class="toplabel tiptoplabel">Do you need to make arrangements for a pick up or drop off location?</div>
-          <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
-          <label class="radio"><input type="radio" name="danger" value="no"> No</label>
-          
-          <label class="commentbox toplabel">
-            If yes, please explain below:
-            <br>
-            <textarea name="comments" class="commentbox" rows="7" cols="43" wrap="soft"
-              placeholder="Enter details about requests for special pick up or drop off accomodations here."></textarea>
+              <option value="" selected disabled>&#9662; Rental Locations</option>
+              <option value="centrolocationdrop">Centro Location (near the airport and ferry dock)</option>
+              <option value="cruiseshiplocationdrop">Puerta Maya Location (near the cruise ship terminal)</option>
+              <option value="specialdrop">Special Accomomdations Needed</option>
+            </select>
+            </select>
           </label>
 
-          <div class="toplabel">Will you be arriving on a cruise ship?</div>
-          <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
-          <label class="radio"><input type="radio" name="danger" value="no"> No</label>
-          
-          <label class="toplabel">If yes, please select the name of the cruise line.<select name="region">
+          <label class="toplabel">Select the Type of Rental <select name="region" required>
+              <option value="" selected disabled>&#9662; Rental Type</option>
+              <option value="honda dio scooter">Honda Dio Scooter</option>
+              <option value="honda metro scooter">Honda Metro Scooter</option>
+              <option value="honda pcx150 scooter">Honda PCX150 Scooter</option>
+              <option value="honda pioneer atv">Honda Pioneer ATV</option>
+              <option value="jeep wrangler 2 door">Jeep Wrangler - 2 Door</option>
+              <option value="jeep wrangler 4 door">Jeep Wrangler - 4 Door with A/C</option>
+            </select>
+          </label>
+
+          <label class="toplabel">Select the Quantity of Rentals Needed<select name="region" required>
+              <option value="" selected disabled>&#9662; Quantity</option>
+              <option value="onerental">1</option>
+              <option value="tworentals">2</option>
+              <option value="threerentals">3</option>
+              <option value="fourrentals">4</option>
+              <option value="fiverentals">5</option>
+              <option value="sixrentals">6</option>
+            </select>
+          </label>
+
+        </fieldset>
+      </div>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <div class="toplabel tiptoplabel">Do you need to make arrangements for a pick up or drop off location?</div>
+        <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
+        <label class="radio"><input type="radio" name="danger" value="no"> No</label>
+
+        <label class="commentbox toplabel">
+          If yes, please explain below:
+          <br>
+          <textarea name="comments" class="commentbox" rows="7" cols="43" wrap="soft"
+            placeholder="Enter details about requests for special pick up or drop off accomodations here."></textarea>
+        </label>
+
+        <div class="toplabel">Will you be arriving on a cruise ship?</div>
+        <label class="radio"><input type="radio" name="danger" value="yes"> Yes</label>
+        <label class="radio"><input type="radio" name="danger" value="no"> No</label>
+
+        <label class="toplabel">If yes, please select the name of the cruise line.<select name="region">
             <option value="" selected disabled>&#9662; Cruise Line</option>
             <option value="carnival">Carnival Cruise Line</option>
             <option value="celebrity">Celebrity Cruises</option>
@@ -153,8 +157,8 @@
             <option value="viking">Viking Ocean Cruises</option>
             <option value="other">Other</option>
             <option value="na">N/A</option>
-        </select>
-        </label> 
+          </select>
+        </label>
       </fieldset>
 
       <fieldset class="agreement">
@@ -162,27 +166,33 @@
         <div class="toplabel tiptoplabel">Renters must read and agree to these requirements:</div>
         <div class="toplabel">
           <ul class="rentalagreement">
-            <li>A valid driver's license is required to pick up your rental.</li>
-          <li>Credit card payments only.</li>
-          <li>Rental insurance is sold separately.</li>
-          <li>Unlimited mileage is included.</li>
-          <li>Fuel is not included. Please return with a full tank.</li>
-          <li>Walk-ins are availabale on a first come, first serve basis.</li>
-          <li>Scooter drivers and passengers must be 18 years or older.</li>
-          <li>All drivers of any rentals must be 18 years or older.</li>
-          <li>Drivers are responsible for traffic tickets or fines while using the rental.</li>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of acquiring the rental.</li>
+            <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel costs are not included. Please return with a full tank.</li>
+            <li>Unlimited mileage is included.</li>
+            <li>Liability insurance is free of charge.</li>
+            <li>Reservations rate require a 24 hour prior notification.</li>
+            <li>Free rental delivery to Cozumel Hotel, Airbnbs, or local private residences for rentals of 2 or more
+              days.</li>
+            <li>Payments may be made by Apple Pay, Google Pay, cash, credit card, debit card, Venmo, or PayPal.
+            </li>
+            <li>Walk-ins are availabale on a first come, first serve basis.</li>
+            <li>All drivers of any rentals must be 18 years or older.</li>
+            <li>Drivers are responsible for traffic tickets or fines while using the rental.</li>
           </ul>
         </div>
 
-        <div class="toplabel">Have you read the rental agreement and do you agree to abide by all of the requirements?</div>
+        <div class="toplabel">Have you read the rental agreement and do you agree to abide by all of the requirements?
+        </div>
         <label class="radio"><input type="radio" name="agreement" value="yes" required> Yes</label>
-        <label class="radio"><input type="radio" name="agreement" value="no"> No</label> 
-    </fieldset>
+        <label class="radio"><input type="radio" name="agreement" value="no"> No</label>
+      </fieldset>
 
       <input type="submit" value="Reserve" class="submitBtn">
 
-  </form>
-      
+    </form>
+
   </main>
 
   <!-- FOOTER HERE -->
@@ -191,7 +201,7 @@
       <p>Scoots Rentals | 800-555-1234 | info@scoots.com</p>
       <p>&copy; <span id="currentYear"></span> Scoots</p>
       <p><a href="https://amystephens.github.io/">Amy
-        Stephens</a> | Attributions</p>
+          Stephens</a> | Attributions</p>
       <div class="modified">
         <span>Last Updated: </span>
         <span id="lastModified"></span>

@@ -23,6 +23,18 @@ html {
 /* phone or baseline views **************************/
 /* grouping them together makes the responsivness work */
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 123px;
+  width: 100%;
+}
+
 /*----------- BODY --------------*/
 body {
   font-size: 1rem;
@@ -128,15 +140,23 @@ nav ul li a:hover {
   background-color: #7da39e;
 }
 
+nav ul li a.active_onthispage:hover {
+  background-color: #497683;
+}
+
 nav ul li a:active {
-  color: #497683;
+  font-size: 1.25rem;
+}
+
+nav ul li a.active_onthispage:active {
+  font-size: 1rem;
 }
 
 .active_onthispage {
   background-color: #497683;
   color: #eeeeee;
-  padding: 0 1rem;
-  margin: 0 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul.hide {
@@ -155,13 +175,16 @@ main {
   background-color: #ffffff;
 }
 
-/*----------- GRID ONE SETUP --------------*/
+/*------ INDEX GRID ONE SETUP ---------*/
+
+.mainindex {
+  margin-top: 10rem;
+}
 
 .gridone {
-  
   border: solid 2rem #571c2f;
   background-color: #571c2f;
-  margin: 2%;
+  margin: -.18rem 2% 0 2%;
   max-width: 96%;
 
 }
@@ -170,7 +193,7 @@ main {
   display: none;
 }
 
-/*----------- CTA --------------*/
+/*----------- INDEX CTA --------------*/
 
 .cta {
   
@@ -202,133 +225,46 @@ main {
   text-align: center;
   padding: 0 2rem;
   margin: 0;
-  color: #ffffff;
+  color: #eeeeee;
 }
 
 .ctabutton {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   text-align: center;
   color: #571c2f;
   padding: 1rem;
-  max-width: 20rem;
+  max-width: 15rem;
+  height: 3.25rem;
   border-radius: .2rem;
   margin: 1rem auto 0 auto;
 
 }
 
-/*----------- WEATHER --------------*/
-
-.weather {
- 
-  background-color: #eeeeee;
-
+.ctabutton:hover {
+  box-shadow: 0 0 25px #333;
 
 }
 
-.weathersummary_box {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: none;
-}
-
-.weather_title_box {
-  background-color: #7da39e;
-  margin: 0;
-}
-
-.weathersummary_box h3 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  text-transform: uppercase;
-  margin: 1rem 0;
-  text-align: center;
-  color: #497683;
-}
-
-.weathertable {
-  font-size: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 8px 8px 8px;
-  row-gap: 1rem;
-  column-gap: .5rem;
-  margin-bottom: 1.25rem;
-}
-
-#currdescription {
-  text-transform: capitalize;
-}
-.gridleft {
-  text-align: right;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 0;
+.ctabutton a {
+  text-decoration: none;
   color: #1f293f;
-  padding-left: 0;
-  margin: 0;
-}
-.gridright {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 0;
-  color: #1f293f;
-  padding-left: 0;
-  margin: 0;
 }
 
-/*----------- FORECAST --------------*/
+.ctabutton a:hover {
+  font-size: 1.05rem;
+  color: #571c2f;
 
-
-.forecastscoot {
-  background-color: #eeeeee;
-  padding: 0 1rem 1.5rem 1rem;
 }
 
-.forecastscoot h4 {
-  padding: 1rem 0 .5rem 0;
-  color: #eeeeee;
-  background-color: #7da39e;
-  display: block;
-  background-color: #497683;
-  border: 5px solid #497683;
-  width: 95%;
-  height: 20px;
-  padding: .75rem 1rem .5rem 1rem;
-  margin: 0 auto;
-}
 
-.forecast {
-  display: block;
-  background-color: #ffffff;
-  border: 5px solid #497683;
-  font-size: 1rem;
-  width: 95%;
-  height: 132px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  padding: .75rem 1rem .5rem 1rem;
-  margin: 0 auto 0rem auto;
-  text-align: center;
-}
 
-.forecastimg {
-  padding: 5px;
-  margin: 0 auto;
-}
-
-/*----------- GRID SETUP --------------*/
+/*----------- INDEX GRID SETUP --------------*/
 
 .gridtwo {
-  margin: 2%;
+  margin: -1rem 2% 0 2%;
   max-width: 96%;
   justify-content: center;
   align-items: center;
@@ -345,46 +281,64 @@ main {
 }
 
 .rentalbutton {
-  background-color: #571c2f;
+  background-color: #497683;
   text-align: center;
-  color: #ffffff;
   padding: 1rem;
-  max-width: 12rem;
+  max-width: 15rem;
+  min-width: 9rem;
+  height: 3.25rem;
   border-radius: .2rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
+  
 }
 
 .rentalspics {
-  border: solid 1rem #ffffff;
-  background-color: #7da39e;
+  border: solid 1rem #1f293f;
+  background-color: #fff;
   margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .rentals img {
   background-color: #ffffff;
-  margin: 0;
+  margin: auto;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  max-width: 100%; 
+  max-width: 350px;
+ 
 }
 
 .rentals h2 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #eeeeee;
+  color: #1f293f;
+  margin-bottom: .5rem;
 }
 
 .rentals p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #ffffff;
-
+  color: #1f293f;
+  margin: 0 0 .5rem 0;
 }
 
+a.rentalbutton {
+  color: #ffffff;
+  text-decoration: none;
+}
 
+.rentalbutton:hover {
+  
+}
+
+.rentalbutton:hover {
+  font-size: 1.05rem;
+
+  background-color: #7da39e;
+}
 
 /*----------- TESTIMONIALS --------------*/
 
@@ -429,10 +383,6 @@ p {
   text-align: left;
   margin: 1rem 0 .25rem 0;
 } */
-
-.pictureoverlay_box {
-  position: relative;
-}
 
 picture.picturecontainer {
   display: block;
@@ -479,7 +429,7 @@ padding: 0;
 margin: 0.5rem;
 }
 
-/* ------articles------ */
+/* ------articles------ 
 
 .article {
   max-width: 350px;
@@ -502,46 +452,179 @@ main img {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+} */
+
+/* ---------- contact page ---------- */
+
+.maincontact {  
+  margin-top: 10rem;
+  background-color: #eee;
 }
 
-/* ------gallery page css------ */
+.contactflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  column-gap: 3rem;
+  border: solid 2rem #7da39e;
+  background-color: #eee;
+  padding: 2rem;
+}
 
-.gallery {
+div.contacth2_box h2 {
+  font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #1f293f;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.75rem;
+    letter-spacing: .5rem;
+    padding: 2rem 1rem 0 1rem;
+    margin-bottom: 2rem;
+
+}
+
+div.maptakeone {
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto 0rem auto;
+  padding-bottom: 2rem;
+  max-width: 640px;
+  min-width: 270px;
+  height: auto;
+}
+
+div.map {
+  overflow:hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height:0;
+  margin: 0;
+}
+
+div.map iframe{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.locations h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  margin: 1.72rem 0 .5rem 0;
+  text-align: left;
+  color: #497683;
+}
+
+.locations h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin: 1rem 0;
+  text-align: left;
+  color: #497683;
+}
+
+.locations p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin: 1rem 0;
+  text-align: left;
+  color: #1f293f;
+}
+
+div.contactflex fieldset {
+margin-top: 1.5rem;
+}
+
+/* --------------- tours --------------- */
+
+.maintours {
+  background-color: #eeeeee;
+ 
+  margin-top: 10rem;
+  
+}
+
+.places {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 0 1.75rem 3rem 1.75rem;
+  padding: 0 1.75rem 2rem 1.75rem;
+  margin: 2%;
+  max-width: 96%;
 }
 
-div p.caption {
-  text-align: center;
-  color: #003366;
-  margin-bottom: 2rem;
-}
 
 div.photo {
   background-color: #ffffff;
+  padding: 0 2%;
+  max-width: 96%;
+  margin: auto;
 }
 
-div picture img[data-src] {
-  filter: blur(0.1em);
+div.photo picture img {
+  max-width: 100%;
+  padding: 2rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
-div.gallery picture img {
-  border-style: solid;
-  border-color: #ffffff;
-  border-width: 1rem;
-  transition: filter 0.5s;
+div.tours_box h2 {
+  font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #1f293f;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.75rem;
+    letter-spacing: .25rem;
+    padding: 2rem 1rem 0 1rem;
+    margin-bottom: 2rem;
+
 }
 
 div p.caption {
+  color: #1f293f;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  padding: 0 .75rem 2.5rem 0;
+  margin: 1rem .5rem 0 .5rem;
+  text-align: center;
+  line-height: 1.5rem;
   padding: 0 1.75rem 0 1rem;
 }
 
+.places p.tourinfo {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #497683;
+  text-align: center;
+  line-height: 1.25rem;
+  padding: .5rem 1rem 2rem 1rem;
+  margin: 0;
+}
+
 /* ------- reservations form -------- */
+
 
 .flexformone {
   display: flex;
@@ -701,28 +784,52 @@ p.thanks {
 }
 
 /* ------- rentals JSON and tables ------- */
+.mainform {
+  background-color: #eeeeee;
+}
+
+.mainrentals {
+  margin-top: 10rem;
+}
+
+.mainrentals .formname_box h2 {
+  font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #1f293f;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.75rem;
+    letter-spacing: .5rem;
+    padding: 2rem 1rem 0 1rem;
+    margin: 0 auto;
+    
+}
 
 table.rentalsjson {
-  border: solid 2rem #7da39e;
+  border: solid 1rem #7da39e;
   background-color: #fff;
   margin: 2%;
   max-width: 96%;
   border-collapse: collapse;
 }
 
-table.rentalsjson th, table.rentalsjson td {
+table.rentalsjson td {
   border: solid .1rem #497683;
-  padding: 1rem;
+  padding: .25rem;
+  font-size: .5rem;
+  text-align: center;
 }
 
-table th {
+table.rentalsjson th {
+  border: solid .1rem #497683;
   font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: .5rem;
     color: #497683;
     text-align: center;
-    line-height: 1rem;
-    padding: .5rem;
+    line-height: .75rem;
+    padding: .5rem .15rem;
     margin: 0;
 
 }
@@ -733,13 +840,21 @@ table td {
     font-size: 1rem;
     color: #497683;
     text-align: left;
-    line-height: 1rem;
-    padding: .5rem;
+    line-height: .75rem;
+    padding: .5rem .15rem;
     margin: 0;
 
 }
 
-/* ---------------adventure article--------------- */
+span.maximum {
+  display: none;
+}
+
+table.rentalsjson img {
+  max-width: 100%;
+}
+
+/* ---------------adventure article--------------- 
 
 .adventures {
   background-color: #eeeeee;
@@ -759,7 +874,7 @@ div.adventures h3 {
   text-align: left;
   margin: 0;
   padding-top: 1rem;
-}
+} */
 
 /* ------------------wireframe pngs------------------ */
 
@@ -777,19 +892,14 @@ div.adventures h3 {
 
 /* ------------------footer------------------ */
 
+
+
 div.mapcontact_box {
   background-color: #99cccc;
   max-width: 100%;
   height: 110px;
   margin: 0 auto;
   padding-top: .5rem;
-}
-
-.map {
-  max-width: 350px;
-  padding: 1rem 1rem 0rem 1rem;
-  display: none;
-  border-style: none;
 }
 
 .contact_box {
@@ -837,7 +947,9 @@ footer p, .modified {
   line-height: .75rem;
 }
 
-
+footer.foot_box {
+  margin-top: -1rem;
+}
 
 .socialmedia {
   width: 25px;
