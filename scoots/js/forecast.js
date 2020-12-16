@@ -1,19 +1,5 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=3530103&appid=9a26765da4794e6d99960311611fab93&units=imperial';
+
 const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=3530103&appid=9a26765da4794e6d99960311611fab93&units=imperial';
-
-fetch(apiURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        //weather overlay box
-        document.getElementById('current-temp').innerHTML = "Temperature: " + Math.round(jsObject.main.temp) + " &#176;F";
-        
-        document.getElementById('humidity').textContent = "Humidity: " + jsObject.main.humidity;
-        //Currently: description
-        document.getElementById('currdescription').textContent = "Currently: " + jsObject.weather[0].description;
-        //wind speed
-        document.getElementById('windspeed').textContent = "Wind Speed: " + Math.round(jsObject.wind.speed);
-
-    });
 
 fetch(forecastURL)
     .then((response) => response.json())

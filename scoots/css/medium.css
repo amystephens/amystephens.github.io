@@ -93,7 +93,6 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: none;
 }
 
 .weather_title_box {
@@ -167,7 +166,7 @@
 /* --------------rentals page -------------- */
 
 table.rentalsjson {
-  border: solid 2rem #7da39e;
+  border: solid 2rem #497683;
   background-color: #fff;
   margin: 2%;
   max-width: 96%;
@@ -247,6 +246,14 @@ table.rentalsjson th, table.rentalsjson td {
   letter-spacing: -.2px;
 }
 
+.formthree label.commentsmall {
+  display: none;
+}
+
+.formthree label.commentmedium {
+  display: block;
+}
+
 
   /* --------------tours page css-------------- */
 
@@ -295,7 +302,7 @@ table.rentalsjson th, table.rentalsjson td {
 
   /* -------reservations form-------- */
 
-  .mainform {
+  .mainreservations {
     margin-top: 12rem;
   }
 
@@ -303,6 +310,15 @@ table.rentalsjson th, table.rentalsjson td {
     margin: 2rem auto;
     width: 100%;
     max-width: 50rem;
+  }
+
+  form legend {
+    color: #1f293f;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    padding: 0 .75rem 2.5rem 0;
+    margin-left: -1rem;
   }
 
   .agreement {
@@ -339,18 +355,31 @@ table.rentalsjson th, table.rentalsjson td {
     padding: .25rem;
   }
 
-  form input.submitBtn {
-    display: block;
-    width: 100%;
-    max-width: 20rem;
-    margin: .1rem auto 2.2rem auto;
-  }
-
 /* -------- contact page -------- */
 
 
 .maincontact {
   margin-top: 12rem;
+}
+
+.contactform fieldset label.tiptoplabel, .contactform fieldset label.toplabel {
+  width: 50rem;
+}
+
+.contactform fieldset label {
+  max-width: 20rem;
+}
+
+.contactform legend span.off {
+  display: inline;
+}
+
+.contactform label.commentsmall {
+  display: none;
+}
+
+.contactform label.commentmedium {
+  display: block;
 }
 
 div.maptakeone {
@@ -387,7 +416,7 @@ div.map iframe{
   text-transform: uppercase;
   letter-spacing: .15rem;
   margin: 1.72rem 0 .5rem 0;
-  text-align: left;
+  text-align: center;
   color: #497683;
 }
 
@@ -397,7 +426,7 @@ div.map iframe{
   font-size: 1.5rem;
   line-height: 1.25rem;
   margin: 1rem 0;
-  text-align: left;
+  text-align: center;
   color: #497683;
 }
 
@@ -407,7 +436,7 @@ div.map iframe{
   font-size: 1.5rem;
   line-height: 1.25rem;
   margin: 1rem 0;
-  text-align: left;
+  text-align: center;
   color: #1f293f;
 }
 
