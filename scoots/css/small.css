@@ -300,13 +300,19 @@ main {
   flex-direction: column;
 }
 
-.rentals img {
+/* .rentals img {
   background-color: #ffffff;
   margin: auto;
   justify-content: center;
   align-items: center;
   max-width: 350px;
- 
+} */
+
+.rentals img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0;
 }
 
 .rentals h2 {
@@ -383,6 +389,9 @@ p {
   text-align: left;
   margin: 1rem 0 .25rem 0;
 } */
+
+/* ------ index page hero image ------ */
+
 
 picture.picturecontainer {
   display: block;
