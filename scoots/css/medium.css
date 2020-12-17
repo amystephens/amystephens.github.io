@@ -1,9 +1,8 @@
-/* medium css for Lesson 9 */
-
 /* Tablet Views ******************************/
 @media only screen and (min-width: 25rem) {
 
-  table.rentalsjson th, table.rentalsjson td {
+  table.rentalsjson th,
+  table.rentalsjson td {
     font-size: .75rem;
     line-height: 1rem;
   }
@@ -11,6 +10,7 @@
 }
 
 @media only screen and (min-width: 39rem) {
+
   /* Flex Design for Navigation */
   nav {
     top: 165px;
@@ -51,93 +51,79 @@
     margin: .25rem 0 2rem 0;
   }
 
-  .picturesummarygroup {
-    max-width: 100%;
-  }
-
-  
-
-  #icon1 img {
-    max-width: 4rem;
-  }
-
-  .events {
-    margin-bottom: 1.4rem;
-  }
-
   /*----------- Index Page --------------*/
 
-.gridone {
-  
-  border: solid 2rem #571c2f;
-  background-color: #571c2f;
-  margin: 2%;
-  max-width: 96%;
-  display: flex;
-  flex-direction: row;
-  margin-top: -0.2rem;
-}
+  .gridone {
 
-/*----------- INDEX WEATHER --------------*/
+    border: solid 2rem #571c2f;
+    background-color: #571c2f;
+    margin: 2%;
+    max-width: 96%;
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.2rem;
+  }
 
-.weather {
-  display: block;
-  width: 600px;
-  padding: 1rem;
-  margin-left: 2rem;
-  background-color: #eeeeee;
-}
+  /*----------- INDEX WEATHER --------------*/
+
+  .weather {
+    display: block;
+    width: 600px;
+    padding: 1rem;
+    margin-left: 2rem;
+    background-color: #eeeeee;
+  }
 
 
-.weathersummary_box {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
+  .weathersummary_box {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-.weather_title_box {
-  background-color: #7da39e;
-  margin: 0;
-}
+  .weather_title_box {
+    background-color: #7da39e;
+    margin: 0;
+  }
 
-.weathersummary_box h3 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  text-transform: uppercase;
-  margin: .5rem 1rem;
-  text-align: left;
-  color: #1f293f;
-}
+  .weathersummary_box h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    margin: .5rem 1rem;
+    text-align: left;
+    color: #1f293f;
+  }
 
-.weathertable {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.25rem;
-}
+  .weathertable {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+  }
 
-#currdescription {
-  text-transform: capitalize;
-}
+  #currdescription {
+    text-transform: capitalize;
+  }
 
-.apiweather {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 2rem;
-  color: #497683;
-  padding-left: 0;
-  margin: 0 1rem;
-}
+  .apiweather {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #497683;
+    padding-left: 0;
+    margin: 0 1rem;
+  }
 
   .gridtwo {
     margin-top: -1.5rem;
     background-color: #eeeeee;
   }
 
-  /*----------- INDEX RENTALS --------------*/
+  /*-------- INDEX RENTALS -----------*/
 
   .rentals {
     display: grid;
@@ -147,43 +133,44 @@
     margin: 1rem auto;
     max-width: 835px;
   }
-  
+
   .rentalspics {
     margin: 0 auto;
     min-width: 250px;
-    
+
   }
-  
+
   .rentals img {
     background-color: #ffffff;
     margin: 0;
     justify-content: center;
     align-items: center;
     max-width: 100%;
-   
+
   }
 
-/* --------------rentals page -------------- */
+  /* -----------rentals page ----------- */
 
-table.rentalsjson {
-  border: solid 2rem #497683;
-  background-color: #fff;
-  margin: 2%;
-  max-width: 96%;
-  border-collapse: collapse;
-}
+  table.rentalsjson {
+    border: solid 2rem #497683;
+    background-color: #fff;
+    margin: 2%;
+    max-width: 96%;
+    border-collapse: collapse;
+  }
 
-.mainrentals {
-  margin-top: 12rem;
-}
+  .mainrentals {
+    margin-top: 12rem;
+  }
 
-table.rentalsjson th, table.rentalsjson td {
-  font-size: 1rem;
-  padding: .5rem;
-}
+  table.rentalsjson th,
+  table.rentalsjson td {
+    font-size: 1rem;
+    padding: .5rem;
+  }
 
-/* -------Weather Summary Overlay Box------- */
-  
+  /* ----Weather Summary Overlay Box---- */
+
   h3 {
     text-align: left;
   }
@@ -199,63 +186,21 @@ table.rentalsjson th, table.rentalsjson td {
     margin-top: 0;
   }
 
-  /*.weathersummary_box {
-    background-color: rgb(153, 204, 204, .85);
-    
-    left: 1.25rem;
-    top: 1.25rem;
-    width: 250px;
-    margin-top: 0;
-  } 
+  /* --------reservations page -------- */
 
-  .overlaycontainer {
-    width: 250px;
-    height: auto;
-    display: grid;
-    row-gap: 1.35rem;
-  } */
-
-  /* ------- article ------- */
-
-  .article {
-    max-width: 96%;
-    padding-left: 0;
+  #reservations a {
+    letter-spacing: -.2px;
   }
 
-  .article p {
-    font-size: 1rem;
+  .formthree label.commentsmall {
+    display: none;
   }
 
-  .article h3 {
-    font-size: 1.5rem;
+  .formthree label.commentmedium {
+    display: block;
   }
 
-  .byline {
-    line-height: 1.25rem;
-  }
-
-  img.hike {
-    max-width: 350px;
-    float: left;
-    margin: 0 1rem 1rem 0;
-  }
-
-/* --------reservations page -------- */
-
-#reservations a {
-  letter-spacing: -.2px;
-}
-
-.formthree label.commentsmall {
-  display: none;
-}
-
-.formthree label.commentmedium {
-  display: block;
-}
-
-
-  /* --------------tours page css-------------- */
+  /* -----------tours page ----------- */
 
   .maintours {
     margin-top: 12rem;
@@ -286,7 +231,7 @@ table.rentalsjson th, table.rentalsjson td {
 
   div.tours_box h2 {
     letter-spacing: .5rem;
-  
+
   }
 
   div p.caption {
@@ -322,7 +267,7 @@ table.rentalsjson th, table.rentalsjson td {
   }
 
   .agreement {
-      margin-top: 4.25rem;
+    margin-top: 4.25rem;
   }
 
   form label.toplabel {
@@ -355,203 +300,117 @@ table.rentalsjson th, table.rentalsjson td {
     padding: .25rem;
   }
 
-/* -------- contact page -------- */
+  /* -------- contact page -------- */
 
 
-.maincontact {
-  margin-top: 12rem;
-}
+  .maincontact {
+    margin-top: 12rem;
+  }
 
-.contactform fieldset label.tiptoplabel, .contactform fieldset label.toplabel {
-  width: 50rem;
-}
+  .contactform fieldset label.tiptoplabel,
+  .contactform fieldset label.toplabel {
+    width: 50rem;
+  }
 
-.contactform fieldset label {
-  max-width: 20rem;
-}
+  .contactform fieldset label {
+    max-width: 20rem;
+  }
 
-.contactform legend span.off {
-  display: inline;
-}
+  .contactform legend span.off {
+    display: inline;
+  }
 
-.contactform label.commentsmall {
-  display: none;
-}
+  .contactform label.commentsmall {
+    display: none;
+  }
 
-.contactform label.commentmedium {
-  display: block;
-}
-
-div.maptakeone {
-  align-items: center;
-  justify-content: center;
-  margin: 2rem auto 0rem auto;
-  padding-bottom: 2rem;
-  max-width: 640px;
-  min-width: 270px;
-  height: auto;
-}
-
-div.map {
-  overflow:hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height:0;
-  margin: 0 2%;
-  max-width: 96%;
-  background-color: #497683;
-
-}
-
-div.map iframe{
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 5%;
-  right: 5%;
-  max-width: 640px;
-  max-height: 480px;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 2rem;
-}
-
-.locations h3 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-transform: uppercase;
-  letter-spacing: .15rem;
-  margin: 1.72rem 0 .5rem 0;
-  text-align: center;
-  color: #497683;
-}
-
-.locations h4 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.25rem;
-  margin: 1rem 0;
-  text-align: center;
-  color: #497683;
-}
-
-.locations p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 1.25rem;
-  margin: 1rem 0;
-  text-align: center;
-  color: #1f293f;
-}
-
-div.contactflex fieldset {
-margin-top: 1.5rem;
-}
-
-div.contactflex {
-}
-
-/* --------------index town cards-------------- */
-
-div.cards {
-  display: block;
-  grid-template-rows: 1fr;
-}
-
-main div.cards section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  margin-bottom: 1rem;
-  max-width: 750px;
-  width: auto;
-  min-height: auto;
-}
-
-div.cardImg img {
-  padding-top: 0;
-  float: right;
-  max-width: 570px;
-  min-height: 200px;
-  object-fit: cover;
-}
-
-div.cardText p {
-  text-align: left;
-  padding-left: 2rem;
-}
-
-div.cardText h2 {
-  text-align: left;
-  padding-left: 1rem;
-}
-
-div.cardText p.motto {
-  font-size: 1rem;
-  margin-left: 0;
-}
-
-div.cards section:nth-child(2) img {
-  order: 1;
-  float: left;
-}
-
-div.cards section:nth-child(2) .cardText {
-  order: 2;
-}
-
-  /* ------------adventure article------------ */
-
-  div.adventures {
+  .contactform label.commentmedium {
     display: block;
   }
 
-  div.adventures img {
-    float: right;
-    padding-left: 1rem;
-    width: 350px;
+  div.maptakeone {
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto 0rem auto;
+    padding-bottom: 2rem;
+    max-width: 640px;
+    min-width: 270px;
+    height: auto;
   }
 
-  div.adventuretext {
-    padding-left: 1.25rem;
+  div.map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin: 0 2%;
+    max-width: 96%;
+    background-color: #497683;
+
   }
 
-  div.adventuretext h3 {
-    margin-top: -1.3rem;
+  div.map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    max-width: 640px;
+    max-height: 480px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
   }
 
-  .adventures {
-    width: 96%;
+  .locations h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    margin: 1.72rem 0 .5rem 0;
+    text-align: center;
+    color: #497683;
+  }
+
+  .locations h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: #497683;
+  }
+
+  .locations p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: #1f293f;
+  }
+
+  div.contactflex fieldset {
+    margin-top: 1.5rem;
+  }
+
+  div.contactflex {}
+
+  /* -----------index town cards----------- */
+
+  div.cards {
+    display: block;
+    grid-template-rows: 1fr;
   }
 
   /* footer */
-
-  div.mapcontact_box {
-    height: 285px;
-    padding-left: .5rem;
-    display: block;
-  }
-
-  .contact_box p {
-    font-size: 1rem;
-  }
-
-  .contact_box {
-    display: block;
-    padding-top: .55rem;
-  }
-
-  .address,
-  .phone {
-    margin: 2rem 0 3rem 0;
-  }
 
   footer {
     font-size: .8rem;
@@ -571,23 +430,26 @@ div.cards section:nth-child(2) .cardText {
 }
 
 @media only screen and (min-width: 49rem) {
-  table.rentalsjson td, table.rentalsjson th {
+
+  table.rentalsjson td,
+  table.rentalsjson th {
     font-size: 1rem;
     padding: .5rem;
   }
 
 
-span.maximum {
-  display: inline;
-}
-span.riders {
-  display: none;
-}
+  span.maximum {
+    display: inline;
+  }
+
+  span.riders {
+    display: none;
+  }
 
 }
 
 @media only screen and (min-width: 65rem) {
-  
+
   /*----------- INDEX FORECAST --------------*/
   .weather {
     display: block;
@@ -597,42 +459,42 @@ span.riders {
     background-color: #eeeeee;
   }
 
-.forecastscoot {
-  background-color: #eeeeee;
-  padding: 0 1rem 1.5rem 1rem;
-}
+  .forecastscoot {
+    background-color: #eeeeee;
+    padding: 0 1rem 1.5rem 1rem;
+  }
 
-.forecastscoot h4 {
-  color: #eeeeee;
-  background-color: #7da39e;
-  display: block;
-  background-color: #497683;
-  border: 5px solid #497683;
-  width: 95%;
-  height: 20px;
-  padding: .75rem 1rem .5rem 1rem;
-  margin: .75rem auto 0 auto;
-}
+  .forecastscoot h4 {
+    color: #eeeeee;
+    background-color: #7da39e;
+    display: block;
+    background-color: #497683;
+    border: 5px solid #497683;
+    width: 95%;
+    height: 20px;
+    padding: .75rem 1rem .5rem 1rem;
+    margin: .75rem auto 0 auto;
+  }
 
-.forecast {
-  display: block;
-  background-color: #ffffff;
-  border: 5px solid #497683;
-  font-size: 1rem;
-  width: 95%;
-  height: 132px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  padding: .75rem 1rem .5rem 1rem;
-  margin: 0 auto;
-  text-align: center;
-}
+  .forecast {
+    display: block;
+    background-color: #ffffff;
+    border: 5px solid #497683;
+    font-size: 1rem;
+    width: 95%;
+    height: 132px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: .75rem 1rem .5rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-.forecastimg {
-  padding: 5px;
-  margin: 0 auto;
-}
+  .forecastimg {
+    padding: 5px;
+    margin: 0 auto;
+  }
 
   .forecastscoot {
     display: block;
