@@ -113,7 +113,7 @@
     font-weight: 700;
     font-size: 1rem;
     line-height: 2rem;
-    color: #497683;
+    color: #1f293f;
     padding-left: 0;
     margin: 0 1rem;
   }
@@ -433,7 +433,9 @@
   }
 
   .forecastscoot h4 {
-    color: #eeeeee;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
     background-color: #7da39e;
     display: block;
     background-color: #497683;
