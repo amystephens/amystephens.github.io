@@ -472,4 +472,8 @@
     padding: 1rem;
   }
 
+  #reservations a {
+    letter-spacing: .25rem;
+  }
+
 }
