@@ -41,16 +41,6 @@
         "walkinfull": 80
       },
       {
-        "name": "Wrangler - 4 door with AC",
-        "type": "Jeep",
-        "photo": "rentaljeepfour350.jpg",
-        "passengers": 5,
-        "half": 70,
-        "full": 100,
-        "walkinhalf": 85,
-        "walkinfull": 125
-      },
-      {
         "name": "Wrangler - 2 door",
         "type": "Jeep",
         "photo": "rentaljeeptwo350.jpg",
@@ -59,6 +49,16 @@
         "full": 85,
         "walkinhalf": 70,
         "walkinfull": 90
-      }
+      },
+      {
+        "name": "Wrangler - 4 door with AC",
+        "type": "Jeep",
+        "photo": "rentaljeepfour350.jpg",
+        "passengers": 5,
+        "half": 70,
+        "full": 100,
+        "walkinhalf": 85,
+        "walkinfull": 125
+      }      
     ]
   }

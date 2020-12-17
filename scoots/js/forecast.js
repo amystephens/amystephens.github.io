@@ -1,4 +1,3 @@
-
 const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=3530103&appid=9a26765da4794e6d99960311611fab93&units=imperial';
 
 fetch(forecastURL)
@@ -28,9 +27,12 @@ fetch(forecastURL)
             gridTop[i].textContent = weekday[d.getDay()];
 
             //forecast icon and then description
-            const imagesfc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png'; // note the concatenation
-            const description = data[i].weather[0].description; // note how we reference the weather array
-            forecastImg[i].setAttribute('src', imagesfc); // focus on the setAttribute() method
+            const imagesfc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png'; 
+           
+            const description = data[i].weather[0].description; 
+             
+            forecastImg[i].setAttribute('src', imagesfc); 
+            
             forecastImg[i].setAttribute('alt', description);
 
             //forecast temp

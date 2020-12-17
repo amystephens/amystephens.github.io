@@ -6,9 +6,6 @@ fetch(apiURLALERT)
     .then((jsObject) => {
 
 //alert
-var temp = jsObject.current.weather[0].description;
-
-console.log(temp);
 
 var alertme = jsObject.alerts.description;
 
