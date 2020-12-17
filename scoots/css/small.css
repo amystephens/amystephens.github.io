@@ -116,7 +116,7 @@ nav ul li a {
   letter-spacing: .25rem;
   text-decoration: none;
   /* gets rid of underline */
-  color: #eeeeee;
+  color: #fff;
   line-height: 2rem;
   display: block;
   /* this makes the whole block clickable */
@@ -140,7 +140,7 @@ nav ul li a.active_onthispage:active {
 
 .active_onthispage {
   background-color: #497683;
-  color: #eeeeee;
+  color: #fff;
   padding: 0;
   margin: 0;
 }
