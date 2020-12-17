@@ -397,7 +397,10 @@ div.map {
   padding-bottom: 56.25%;
   position: relative;
   height:0;
-  margin: 0;
+  margin: 0 2%;
+  max-width: 96%;
+  background-color: #497683;
+
 }
 
 div.map iframe{
@@ -406,6 +409,14 @@ div.map iframe{
   height: 100%;
   width: 100%;
   position: absolute;
+  left: 5%;
+  right: 5%;
+  max-width: 640px;
+  max-height: 480px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 .locations h3 {
@@ -442,6 +453,9 @@ div.map iframe{
 
 div.contactflex fieldset {
 margin-top: 1.5rem;
+}
+
+div.contactflex {
 }
 
 /* --------------index town cards-------------- */
