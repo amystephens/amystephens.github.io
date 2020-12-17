@@ -6,10 +6,8 @@ fetch(apiURLALERT)
     .then((jsObject) => {
 
 //alert
-
 var alertme = jsObject.alerts.description;
 
-console.log(alertme);
+    window.alert(alertme);    
 
-
-    });
+});
