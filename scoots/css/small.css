@@ -440,15 +440,7 @@ form.contactform {
   display: block;
   padding-top: 1rem;
   color: #fff;
-  font-size: .8rem;
-  line-height: 1.25rem;
-}
-
-.contactform div.toplabel {
-  display: block;
-  padding-top: 1rem;
-  color: #fff;
-  font-size: .8rem;
+  font-size: 1rem;
   line-height: 1.25rem;
 }
 
@@ -667,6 +659,8 @@ form fieldset {
 
 
 form legend {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   color: #1f293f;
   font-size: 1.2rem;
   text-transform: uppercase;
