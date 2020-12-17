@@ -365,38 +365,6 @@
     margin-top: 2rem;
   }
 
-  .locations h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .15rem;
-    margin: 1.72rem 0 .5rem 0;
-    text-align: center;
-    color: #497683;
-  }
-
-  .locations h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.25rem;
-    margin: 1rem 0;
-    text-align: center;
-    color: #497683;
-  }
-
-  .locations p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 1.25rem;
-    margin: 1rem 0;
-    text-align: center;
-    color: #1f293f;
-  }
-
   div.contactflex fieldset {
     margin-top: 1.5rem;
   }
