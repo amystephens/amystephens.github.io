@@ -433,7 +433,7 @@ form.contactform {
   text-transform: uppercase;
   letter-spacing: .15rem;
   padding: 0 0 2.5rem 0;
-  margin-left: -1rem;
+  margin-left: 0rem;
 }
 
 .contactform label.toplabel {
