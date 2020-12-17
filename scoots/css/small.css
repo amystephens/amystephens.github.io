@@ -104,7 +104,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #767c7f;
+  background-color: #404749;
   text-align: center;
 }
 
@@ -437,6 +437,8 @@ form.contactform {
 }
 
 .contactform label.toplabel {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   display: block;
   padding-top: 1rem;
   color: #fff;
